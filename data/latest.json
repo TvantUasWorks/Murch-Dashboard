@@ -1,7 +1,7 @@
 {
   "schema": "tvant.client-portal.snapshot.v1",
   "project": "MURCH PV",
-  "published_at": "2026-10-17T15:54:07+00:00",
+  "published_at": "2026-10-17T21:40:12+00:00",
   "counting_basis": "Documentary coverage; not electrical acceptance. Vdc may include legacy unclassified records where no explicit Vdc are present.",
   "activities": [
     {
@@ -38,6 +38,31 @@
       "complete": 1,
       "scope": 4,
       "unit": "circuits"
+    },
+    {
+      "id": "scada",
+      "name": "SCADA Communications",
+      "complete": 0,
+      "scope": 23,
+      "unit": "INV"
+    },
+    {
+      "id": "precomm",
+      "name": "Inverter Precommissioning Inspection",
+      "complete": 1,
+      "scope": 4,
+      "unit": "circuits",
+      "counting_basis": "Manual OK per circuit, from inspector confirmation; evidence archived locally. Not electrical acceptance."
+    },
+    {
+      "id": "otdr",
+      "name": "OTDR — Fiber Optic Testing",
+      "complete": 1,
+      "reported": 1,
+      "in_review": 0,
+      "scope": 4,
+      "unit": "circuits",
+      "counting_basis": "OTDR ring assigned by supervisor on import; 11A requires records associated with INV01/02/03/05/06 and manual documentary closure. MVJB means Medium Voltage Junction Box; HUT means telecommunications equipment shelter/node; PB is a project connection identifier. Inter-circuit or PB/HUT names do not block registration or documentary closure. Not optical acceptance."
     }
   ],
   "breakdown": {
@@ -216,8 +241,167 @@
         "scope": 18,
         "complete": 18
       }
+    ],
+    "otdr_circuit": [
+      {
+        "circuit": "11A",
+        "reported": 1,
+        "in_review": 0,
+        "complete": 1,
+        "ring_closed": true,
+        "status": "DOCUMENTARY CLOSED",
+        "links": 5,
+        "fibers": 48,
+        "inverters": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "inverter_status": {
+          "INV01": "DOCUMENTED",
+          "INV02": "DOCUMENTED",
+          "INV03": "DOCUMENTED",
+          "INV05": "DOCUMENTED",
+          "INV06": "DOCUMENTED"
+        },
+        "inverters_verified": 0,
+        "inverters_documented": 5,
+        "inverters_required": 5,
+        "missing_inverters": [],
+        "scope_confirmed": false,
+        "topology_verified": false,
+        "expected_links": null,
+        "missing_links": [],
+        "unplanned_links": [],
+        "ring_reasons": [],
+        "reviewed_links": 0,
+        "reported_links": [
+          "UNRESOLVED_5",
+          "UNRESOLVED_4",
+          "FIELD ↔ HUT",
+          "PB01 ↔ PB02",
+          "FIELD ↔ HUT"
+        ],
+        "closure_by": "Moises Jimenez",
+        "closure_note": "Ok",
+        "source_circuits": [
+          "11A"
+        ]
+      },
+      {
+        "circuit": "11B",
+        "reported": 0,
+        "in_review": 0,
+        "complete": 0,
+        "ring_closed": false,
+        "status": "OPEN / PENDING",
+        "links": 0,
+        "fibers": 0,
+        "inverters": [],
+        "inverter_status": {},
+        "inverters_verified": 0,
+        "inverters_documented": 0,
+        "inverters_required": 0,
+        "missing_inverters": [],
+        "scope_confirmed": false,
+        "topology_verified": false,
+        "expected_links": null,
+        "missing_links": [],
+        "unplanned_links": [],
+        "ring_reasons": [
+          "Documentary ring closing not confirmed by supervisor"
+        ],
+        "reviewed_links": 0,
+        "reported_links": [],
+        "closure_by": "",
+        "closure_note": "",
+        "source_circuits": []
+      },
+      {
+        "circuit": "12A",
+        "reported": 0,
+        "in_review": 0,
+        "complete": 0,
+        "ring_closed": false,
+        "status": "OPEN / PENDING",
+        "links": 0,
+        "fibers": 0,
+        "inverters": [],
+        "inverter_status": {},
+        "inverters_verified": 0,
+        "inverters_documented": 0,
+        "inverters_required": 0,
+        "missing_inverters": [],
+        "scope_confirmed": false,
+        "topology_verified": false,
+        "expected_links": null,
+        "missing_links": [],
+        "unplanned_links": [],
+        "ring_reasons": [
+          "Documentary ring closing not confirmed by supervisor"
+        ],
+        "reviewed_links": 0,
+        "reported_links": [],
+        "closure_by": "",
+        "closure_note": "",
+        "source_circuits": []
+      },
+      {
+        "circuit": "12B",
+        "reported": 0,
+        "in_review": 0,
+        "complete": 0,
+        "ring_closed": false,
+        "status": "OPEN / PENDING",
+        "links": 0,
+        "fibers": 0,
+        "inverters": [],
+        "inverter_status": {},
+        "inverters_verified": 0,
+        "inverters_documented": 0,
+        "inverters_required": 0,
+        "missing_inverters": [],
+        "scope_confirmed": false,
+        "topology_verified": false,
+        "expected_links": null,
+        "missing_links": [],
+        "unplanned_links": [],
+        "ring_reasons": [
+          "Documentary ring closing not confirmed by supervisor"
+        ],
+        "reviewed_links": 0,
+        "reported_links": [],
+        "closure_by": "",
+        "closure_note": "",
+        "source_circuits": []
+      }
+    ],
+    "precomm_circuit": [
+      {
+        "circuit": "11A",
+        "ok": true,
+        "metadata_pending": false
+      },
+      {
+        "circuit": "11B",
+        "ok": false,
+        "metadata_pending": false
+      },
+      {
+        "circuit": "12A",
+        "ok": false,
+        "metadata_pending": false
+      },
+      {
+        "circuit": "12B",
+        "ok": false,
+        "metadata_pending": false
+      }
     ]
   },
+  "otdr_ring_schema": "tvant.otdr.ring.v3",
   "visibility": "Aggregated client publication only; no raw measurements, names, attachments or original results.",
   "report_date": "2026-10-17",
   "iv_curve_note": "IV curve testing has not started because the minimum project-required irradiance has not been met."

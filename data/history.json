@@ -2,42 +2,6 @@
   "schema": "tvant.github.daily.history.v1",
   "items": [
     {
-      "date": "2026-10-11",
-      "pdf": "dailys/MURCH_2026-10-11_Project_All.pdf",
-      "source": "Original TUW Daily PDF; numeric breakdown not yet extracted",
-      "pdf_available": false
-    },
-    {
-      "date": "2026-10-12",
-      "pdf": "dailys/MURCH_2026-10-12_Project_All.pdf",
-      "source": "Original TUW Daily PDF; numeric breakdown not yet extracted",
-      "pdf_available": false
-    },
-    {
-      "date": "2026-10-13",
-      "pdf": "dailys/MURCH_2026-10-13_Project_All.pdf",
-      "source": "Original TUW Daily PDF; numeric breakdown not yet extracted",
-      "pdf_available": false
-    },
-    {
-      "date": "2026-10-14",
-      "pdf": "dailys/MURCH_2026-10-14_Project_All.pdf",
-      "source": "Original TUW Daily PDF; numeric breakdown not yet extracted",
-      "pdf_available": false
-    },
-    {
-      "date": "2026-10-15",
-      "pdf": "dailys/MURCH_2026-10-15_Project_All.pdf",
-      "source": "Original TUW Daily PDF; numeric breakdown not yet extracted",
-      "pdf_available": false
-    },
-    {
-      "date": "2026-10-16",
-      "pdf": "dailys/MURCH_2026-10-16_Project_All.pdf",
-      "source": "Original TUW Daily PDF; numeric breakdown not yet extracted",
-      "pdf_available": false
-    },
-    {
       "date": "2026-10-17",
       "pdf": "dailys/MURCH_2026-10-17_Project_All.pdf",
       "activities": [
@@ -75,10 +39,34 @@
           "complete": 1,
           "scope": 4,
           "unit": "circuits"
+        },
+        {
+          "id": "scada",
+          "name": "SCADA Communications",
+          "complete": 0,
+          "scope": 23,
+          "unit": "INV"
+        },
+        {
+          "id": "precomm",
+          "name": "Inverter Precommissioning Inspection",
+          "complete": 1,
+          "scope": 4,
+          "unit": "circuits",
+          "counting_basis": "Manual OK per circuit, from inspector confirmation; evidence archived locally. Not electrical acceptance."
+        },
+        {
+          "id": "otdr",
+          "name": "OTDR — Fiber Optic Testing",
+          "complete": 1,
+          "reported": 1,
+          "in_review": 0,
+          "scope": 4,
+          "unit": "circuits",
+          "counting_basis": "OTDR ring assigned by supervisor on import; 11A requires records associated with INV01/02/03/05/06 and manual documentary closure. MVJB means Medium Voltage Junction Box; HUT means telecommunications equipment shelter/node; PB is a project connection identifier. Inter-circuit or PB/HUT names do not block registration or documentary closure. Not optical acceptance."
         }
       ],
-      "source": "TVANT SUPERVISOR exported snapshot",
-      "pdf_available": true
+      "source": "TVANT SUPERVISOR exported snapshot"
     }
   ]
 }
