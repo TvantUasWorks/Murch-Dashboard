@@ -35,10 +35,31 @@
         },
         {
           "id": "vlf",
-          "name": "VLF + Battery Bank",
+          "name": "VLF",
           "complete": 1,
           "scope": 4,
           "unit": "circuits"
+        },
+        {
+          "id": "otdr",
+          "name": "OTDR — Fiber Optic Testing",
+          "complete": 0,
+          "scope": 23,
+          "unit": "INV"
+        },
+        {
+          "id": "scada",
+          "name": "SCADA Communications",
+          "complete": 0,
+          "scope": 23,
+          "unit": "INV"
+        },
+        {
+          "id": "precomm",
+          "name": "Inverter Precommissioning Inspection",
+          "complete": 0,
+          "scope": 23,
+          "unit": "INV"
         }
       ],
       "source": "TVANT SUPERVISOR exported snapshot"
