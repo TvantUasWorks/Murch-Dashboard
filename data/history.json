@@ -1,0 +1,47 @@
+{
+  "schema": "tvant.github.daily.history.v1",
+  "items": [
+    {
+      "date": "2026-10-17",
+      "pdf": "dailys/MURCH_2026-10-17_Project_All.pdf",
+      "activities": [
+        {
+          "id": "vdc",
+          "name": "Polarity & Continuity (Vdc)",
+          "complete": 275,
+          "scope": 419,
+          "unit": "LBD"
+        },
+        {
+          "id": "grounding",
+          "name": "Grounding Resistance",
+          "complete": 9,
+          "scope": 23,
+          "unit": "INV"
+        },
+        {
+          "id": "continuity",
+          "name": "Grounding Continuity",
+          "complete": 5,
+          "scope": 23,
+          "unit": "BLOCK"
+        },
+        {
+          "id": "iv",
+          "name": "IV Curves",
+          "complete": 0,
+          "scope": 419,
+          "unit": "LBD"
+        },
+        {
+          "id": "vlf",
+          "name": "VLF + Battery Bank",
+          "complete": 1,
+          "scope": 4,
+          "unit": "circuits"
+        }
+      ],
+      "source": "TVANT SUPERVISOR exported snapshot"
+    }
+  ]
+}
