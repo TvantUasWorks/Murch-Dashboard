@@ -1,62 +1,198 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TVANT Client Portal — MURCH PV</title><style>
-:root{color-scheme:dark;font-family:Inter,'Segoe UI',Arial,sans-serif;background:#101c29;color:#ecf3fa}*{box-sizing:border-box}body{margin:0;background:#101c29}.app{display:flex;min-height:100vh}aside{background:#152638;border-right:1px solid #31485c;width:250px;padding:24px 18px;flex-shrink:0}.brand-wrap{display:flex;align-items:center;gap:12px}.brand{letter-spacing:.13em;font-weight:800;font-size:24px}.sub{font-size:11px;color:#9bb3c6;letter-spacing:.12em}.nav{margin-top:32px}.nav a{display:block;color:#b9cad8;text-decoration:none;padding:13px;border-radius:10px;margin:4px 0}.nav a.active{background:#244861;color:white}.foot{margin-top:35px;font-size:12px;color:#abc0d0;line-height:1.5}.co-brand{margin-top:18px;padding-top:16px;border-top:1px solid #30485b}.co-brand img{max-width:150px;width:100%;height:auto;display:block;filter:brightness(1.04)}main{flex:1;min-width:0;padding:34px 40px;max-width:1520px;margin:auto}h1{font-size:30px;margin:2px 0 6px}.muted{color:#a0b4c4;font-size:13px}.top{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}.pill{border:1px solid #426f59;background:#15392c;color:#a7e3c6;padding:7px 12px;border-radius:25px;font-size:12px}.panel{background:#192c3d;border:1px solid #334b60;border-radius:14px;padding:20px;margin-top:23px}.hero{position:relative;overflow:hidden;padding:0;min-height:250px;background:#0e1720}.hero img{width:100%;height:250px;object-fit:cover;display:block;opacity:.9}.hero .overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,22,34,.85) 0%,rgba(9,22,34,.55) 45%,rgba(9,22,34,.15) 100%)}.hero .content{position:absolute;left:28px;bottom:24px;right:24px}.hero h1{margin:0 0 6px}.hero .muted{max-width:780px}.filters{display:flex;gap:12px;flex-wrap:wrap;align-items:end}.filter{display:flex;flex-direction:column;gap:7px;color:#aabcca;font-size:12px}select,button{background:#263f54;border:1px solid #496278;color:#fff;border-radius:8px;padding:11px 12px;font-size:14px}button{cursor:pointer}button:focus-visible,select:focus-visible{outline:2px solid #79b5dd}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-top:23px}.card{background:#192c3d;border:1px solid #334b60;border-radius:14px;padding:20px;min-height:164px}.name{font-size:13px;color:#c8d7e2;font-weight:650}.num{font-size:31px;font-weight:750;margin:14px 0 12px}.track{height:10px;background:#334a5d;border-radius:10px;overflow:hidden}.fill{height:100%;border-radius:10px}.details{margin-top:10px;font-size:12px;color:#aabecf}.split{display:grid;grid-template-columns:1.2fr 1fr;gap:19px}.double{display:grid;grid-template-columns:1fr 1fr;gap:19px}.row{display:grid;grid-template-columns:62px 1fr 82px;align-items:center;gap:10px;margin:16px 0;font-size:13px}.section-title{font-size:17px;font-weight:700;margin:0 0 14px}table{border-collapse:collapse;width:100%;font-size:13px}th,td{text-align:left;border-bottom:1px solid #354e61;padding:12px 7px}th{color:#abc1d2;font-size:11px;text-transform:uppercase}.note{color:#b5c6d5;line-height:1.6;font-size:12px}.placeholder{padding:20px;border:1px dashed #5f7689;border-radius:12px;color:#c1d1db}.tiny{font-size:11px;color:#8da5b6;margin-top:25px}.history-list{display:grid;gap:10px}.history-entry{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#203548;border:1px solid #3a5266;padding:14px;border-radius:10px}.history-entry small{color:#a8bdce;display:block;margin-top:5px}.tag{font-size:11px;background:#314c60;color:#d8e8f3;padding:5px 9px;border-radius:20px;white-space:nowrap}.chart-wrap{width:100%;overflow-x:auto}.chart-wrap svg{min-width:530px;width:100%;height:auto}.chart-legend{display:flex;gap:17px;flex-wrap:wrap;font-size:12px;color:#bdcfdd}.chart-legend span:before{content:'';display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--c);margin-right:7px}.subtle-notice{font-size:11px;color:#9bb3c6;margin-top:30px}.nav a:focus-visible{outline:2px solid #79b5dd}.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:18px}.kpi{background:#203548;border:1px solid #395065;border-radius:12px;padding:14px}.kpi b{display:block;font-size:24px;margin-top:4px}.pdf-link{color:#d8e8f3;text-decoration:none;border-bottom:1px dotted #7ba1bc}.pdf-link:hover{color:#fff}@media(max-width:1100px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.split,.double,.kpis{grid-template-columns:1fr}}@media(max-width:650px){.app{display:block}aside{width:100%;padding:17px}.nav{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}.nav a{padding:8px;font-size:12px}.foot{display:none}.co-brand{display:none}main{padding:20px 14px}.cards{grid-template-columns:1fr}.card{min-height:135px}.hero img{height:200px}.hero .content{left:16px;bottom:16px;right:16px}} .iv-note{margin-top:8px;font-size:11px;color:#ffc17b;line-height:1.4}</style></head><body><div class="app"><aside><div class="brand-wrap"><div><div class="brand">TVANT</div><div class="sub">CLIENT PORTAL</div></div></div><div class="nav"><a class="active" href="#dashboard">▦ Dashboard</a><a href="#evolucion">▥ Progress Trends</a><a href="#historial">◷ Daily History</a></div><div class="foot">MURCH PV<br>Commissioning Dashboard</div><div class="co-brand"><div class="sub" style="margin-bottom:8px">CLIENT</div><img src="greensol-logo.png" alt="GreenSol"></div></aside><main id="dashboard"><div class="top"><div><div class="sub">COMMISSIONING · MURCH PV</div></div><span class="pill" id="syncStatus" role="status">Checking the latest published Daily…</span></div><section class="panel hero"><img src="murch-hero.jpg" alt="Aerial view of Murch PV"><div class="overlay"></div><div class="content"><div class="sub">TVANT + GREENSOL</div><h1>Project Progress</h1><div class="muted">Supervision progress, documentary coverage and Daily Report history.</div></div></section><section class="panel"><div class="filters"><label class="filter">Scope<select id="scope"><option value="project">Entire project</option><option value="circuit">Circuit</option><option value="inverter">Inverter</option><option value="zone">Zone</option></select></label><label class="filter">Select<select id="selection" disabled><option>All</option></select></label><button id="reset">Clear filters</button></div><p class="note" id="scopeNote">Each test is measured against its defined scope.</p><div class="kpis"><div class="kpi"><span class="muted">Current Daily</span><b>Not loaded</b></div><div class="kpi"><span class="muted">Published history</span><b>—</b></div><div class="kpi"><span class="muted">Activities</span><b>5 types</b></div><div class="kpi"><span class="muted">Status</span><b>Pending</b></div></div></section><section class="cards" id="cards"></section><div class="panel" id="ivCurveNotice" style="border-left:4px solid #e3a23b"><strong>IV CURVES — NOT STARTED</strong><p class="note" id="ivCurveNote">IV curve testing has not started because the minimum project-required irradiance has not been met.</p></div><div class="double"><section class="panel"><h2 class="section-title">Completed Tests</h2><table><thead><tr><th>Activity</th><th>Complete</th><th>Scope</th><th>%</th></tr></thead><tbody id="completedTable"></tbody></table><p class="note">Completed progress for the selected scope.</p></section><section class="panel"><h2 class="section-title">Pending Tests</h2><table><thead><tr><th>Activity</th><th>Pending</th><th>Unit</th></tr></thead><tbody id="pending"></tbody></table><p class="note">Detailed equipment-level status will be updated from TVANT SUPERVISOR V2.</p></section></div><div class="split"><section class="panel"><h2 class="section-title">Vdc Progress by Circuit</h2><div id="circuits"></div><div class="note">Scope: 419 LBD in the documentary register.</div></section><section class="panel"><h2 class="section-title">Selected Scope Summary</h2><table><thead><tr><th>Type</th><th>Value</th></tr></thead><tbody id="summaryTable"></tbody></table><p class="note">Overview for the selected circuit, inverter or zone.</p></section></div><section class="panel" id="evolucion"><h2 class="section-title">Project Progress Trends</h2><p class="note">Based on published Daily Reports. New authorized exports will be added to the history.</p><div class="chart-wrap"><svg id="evolutionChart" viewBox="0 0 760 290" role="img" aria-label="Evolución ilustrativa del avance por actividad"></svg></div><div class="chart-legend"><span style="--c:#4b98cf">Vdc</span><span style="--c:#36ad81">Grounding Resistance</span><span style="--c:#e3a23b">VLF</span></div></section><section class="panel" id="historial"><h2 class="section-title">Daily Report History</h2><p class="note">Each new TUW Daily replaces the current report. Earlier reports remain available in the archive.</p><div id="historyList" class="history-list"></div></section><div class="subtle-notice">Public portal for the MURCH PV documentary supervision updates, authorized for publication by GREENSOL.</div></main></div><script>
-let activities=[];
-let circuits=[["11A",90,92],["11B",66,110],["12A",56,110],["12B",0,107]];
-const realHistory=[];
-function color(p){return p<25?'#dc3545':p<50?'#e3a23b':p<75?'#4b98cf':'#36ad81'}
-const el=id=>document.getElementById(id);let current='project',selected='';let publication=null;
-const escapeHtml=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function fillScope(){current=el('scope').value;const options=publication?(publication.breakdown[current==='circuit'?'circuit':current==='inverter'?'inv':'zone']||[]).map(x=>x.name):(current==='circuit'?circuits.map(x=>x[0]):current==='inverter'?Array.from({length:23},(_,i)=>'INV '+String(i+1).padStart(2,'0')):current==='zone'?['Zone 1','Zone 2','Zone 3','Zone 4','Zone 5','Zone 6','Zone 7']:[]);el('selection').innerHTML='<option value="">'+(current==='project'?'All':'Select')+'</option>'+options.map(x=>'<option>'+x+'</option>').join('');el('selection').disabled=current==='project';selected='';render()}
-function render(){selected=el('selection').value;const useCircuit=current==='circuit'&&selected;const circ=circuits.find(x=>x[0]===selected);const groupKey=current==='circuit'?'circuit':current==='inverter'?'inv':'zone'; const selectedGroup=publication?(publication.breakdown[groupKey]||[]).find(x=>x.name===selected):null; const scoped=publication?(current==='project'?activities:selectedGroup?[["Polarity & Continuity (Vdc)",selectedGroup.complete,selectedGroup.scope,"LBD"]]:[]):useCircuit&&circ?[["Polarity & Continuity (Vdc)",circ[1],circ[2],"LBD"]]:current==='project'?activities:[];
-el('scopeNote').textContent=current==='project'?'Each test is measured against its defined scope.':useCircuit?'Vdc data is available by circuit; other activities require additional published detail.':'This selection requires a specific published dataset from TVANT SUPERVISOR V2.';
-el('cards').innerHTML=scoped.length?scoped.map(([name,done,total,unit])=>{const missing=done===null;const pct=!missing&&total?100*done/total:0;return `<div class="card"><div class="name">${escapeHtml(name)}</div><div class="num">${missing?"Not reported":pct.toFixed(1)+"%"}</div><div class="track"><div class="fill" style="width:${pct}%;background:${color(pct)}"></div></div><div class="details">${missing?"Awaiting next TUW publication":`${done} / ${total} ${unit} · ${total-done} pending`}</div>${name.toLowerCase().includes("iv curve") && done===0 ? `<div class="iv-note">Not started — minimum project-required irradiance not met.</div>` : ""}</div>`}).join(''):'<div class="placeholder">No activity breakdown has been published for this selection.</div>';
-el('pending').innerHTML=scoped.map(([n,d,t,u])=>`<tr><td>${escapeHtml(n)}</td><td>${d===null?"Not reported":t-d}${n.toLowerCase().includes("iv curve") && d===0 ? `<div class="iv-note">Not started — minimum project-required irradiance not met.</div>` : ""}</td><td>${u}</td></tr>`).join('')||'<tr><td colspan="3">Pending data synchronization</td></tr>';
-el('completedTable').innerHTML=scoped.map(([n,d,t,u])=>`<tr><td>${escapeHtml(n)}</td><td>${d===null?"Not reported":d}</td><td>${t} ${u}</td><td>${d===null?"—":(100*d/t).toFixed(1)+"%"}</td></tr>`).join('')||'<tr><td colspan="4">No records</td></tr>';
-el('summaryTable').innerHTML=current==='project'?`<tr><td>Current Daily</td><td>${escapeHtml(publication?.report_date||'Awaiting publication')}</td></tr><tr><td>Daily history</td><td>${document.querySelectorAll('#historyList .history-entry').length}</td></tr><tr><td>Latest publication</td><td>Published by TUW</td></tr>`:selected?`<tr><td>Active filter</td><td>${escapeHtml(selected)}</td></tr><tr><td>Type</td><td>${current}</td></tr><tr><td>Details</td><td>${useCircuit?'Vdc data available':'Awaiting detailed TUW publication'}</td></tr>`:`<tr><td>Active filter</td><td>No selection</td></tr>`;
-el('circuits').innerHTML=circuits.map(([name,d,t])=>{let p=100*d/t;return `<div class="row"><b>${escapeHtml(name)}</b><div class="track"><div class="fill" style="width:${p}%;background:${color(p)}"></div></div><span>${p.toFixed(1)}%</span></div>`}).join('')}
-function evolution(){const data=realHistory;if(data.length<2){el('evolutionChart').innerHTML='';return;} const svg=el('evolutionChart'),w=760,h=290,l=45,r=16,t=18,b=42,iw=w-l-r,ih=h-t-b;const y=v=>t+ih*(1-v/100),x=i=>l+iw*i/(data.length-1);let out='';for(let v=0;v<=100;v+=25){out+=`<line x1="${l}" y1="${y(v)}" x2="${w-r}" y2="${y(v)}" stroke="#385166" stroke-dasharray="4 5"/><text x="${l-9}" y="${y(v)+4}" text-anchor="end" font-size="12" fill="#b3c5d2">${v}%</text>`}data.forEach((d,i)=>out+=`<text x="${x(i)}" y="${h-13}" text-anchor="middle" font-size="12" fill="#b3c5d2">${d.label.slice(0,6)}</text>`);for(const [key,c] of [['vdc','#4b98cf'],['ground','#36ad81'],['vlf','#e3a23b']]){out+=`<polyline fill="none" stroke="${c}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="${data.map((d,i)=>x(i)+','+y(d[key])).join(' ')}"/>`;data.forEach((d,i)=>out+=`<circle cx="${x(i)}" cy="${y(d[key])}" r="4.5" fill="${c}"/>`)}svg.innerHTML=out;}
-function history(){el('historyList').textContent='Loading TUW Daily archive…';}
-evolution();history();el('scope').addEventListener('change',fillScope);el('selection').addEventListener('change',render);el('reset').addEventListener('click',()=>{el('scope').value='project';fillScope()});render();
-
-// Static publication reader. No credentials and no write access to TUW.
-async function loadPublishedDaily(){
- try{
-  const [lr,hr]=await Promise.all([fetch('data/latest.json',{cache:'no-store'}),fetch('data/history.json',{cache:'no-store'})]);
-  if(!lr.ok||!hr.ok)throw Error('Publication files could not be loaded Client Portal');
-  const latest=await lr.json(), history=await hr.json();
-  if(latest.schema!=='tvant.client-portal.snapshot.v1'||!Array.isArray(latest.activities)||!Array.isArray(history.items))throw Error('Unexpected publication file format');
-  const labels={vdc:'Polarity & Continuity (Vdc)',grounding:'Grounding Resistance',continuity:'Grounding Continuity',iv:'IV Curves',vlf:'VLF',otdr:'OTDR — Fiber Optic Testing',scada:'SCADA Communications',precomm:'Inverter Precommissioning Inspection'};
-  const valid=latest.activities.filter(a=>Number.isFinite(a.scope)&&Number.isFinite(a.complete)&&a.scope>=a.complete&&a.complete>=0);
-  if(!valid.length)throw Error('No valid activities were found in the published Daily');
-  activities=valid.map(a=>[labels[a.id]||String(a.name||'').replace(/VLF\s*\+\s*Battery Bank/gi,'VLF'),a.complete,a.scope,a.unit]);
-  for(const id of ['otdr','scada','precomm']){
-    if(!valid.some(a=>a.id===id))activities.push([labels[id],null,23,'INV']);
+:root{color-scheme:dark;font-family:Inter,'Segoe UI',Arial,sans-serif;background:#101c29;color:#ecf3fa}*{box-sizing:border-box}body{margin:0;background:#101c29}.app{display:flex;min-height:100vh}aside{background:#152638;border-right:1px solid #31485c;width:250px;padding:24px 18px;flex-shrink:0}.brand-wrap{display:flex;align-items:center;gap:12px}.brand{letter-spacing:.13em;font-weight:800;font-size:24px}.sub{font-size:11px;color:#9bb3c6;letter-spacing:.12em}.nav{margin-top:32px}.nav a{display:block;color:#b9cad8;text-decoration:none;padding:13px;border-radius:10px;margin:4px 0}.nav a.active{background:#244861;color:white}.foot{margin-top:35px;font-size:12px;color:#abc0d0;line-height:1.5}.co-brand{margin-top:18px;padding-top:16px;border-top:1px solid #30485b}.co-brand img{max-width:150px;width:100%;height:auto;display:block;filter:brightness(1.04)}main{flex:1;min-width:0;padding:34px 40px;max-width:1520px;margin:auto}h1{font-size:30px;margin:2px 0 6px}.muted{color:#a0b4c4;font-size:13px}.top{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}.pill{border:1px solid #426f59;background:#15392c;color:#a7e3c6;padding:7px 12px;border-radius:25px;font-size:12px}.panel{background:#192c3d;border:1px solid #334b60;border-radius:14px;padding:20px;margin-top:23px}.hero{position:relative;overflow:hidden;padding:0;min-height:250px;background:#0e1720}.hero img{width:100%;height:250px;object-fit:cover;display:block;opacity:.9}.hero .overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,22,34,.85) 0%,rgba(9,22,34,.55) 45%,rgba(9,22,34,.15) 100%)}.hero .content{position:absolute;left:28px;bottom:24px;right:24px}.hero h1{margin:0 0 6px}.hero .muted{max-width:780px}.filters{display:flex;gap:12px;flex-wrap:wrap;align-items:end}.filter{display:flex;flex-direction:column;gap:7px;color:#aabcca;font-size:12px}select,button{background:#263f54;border:1px solid #496278;color:#fff;border-radius:8px;padding:11px 12px;font-size:14px}button{cursor:pointer}button:focus-visible,select:focus-visible{outline:2px solid #79b5dd}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-top:23px}.card{background:#192c3d;border:1px solid #334b60;border-radius:14px;padding:20px;min-height:164px}.name{font-size:13px;color:#c8d7e2;font-weight:650}.num{font-size:31px;font-weight:750;margin:14px 0 12px}.track{height:10px;background:#334a5d;border-radius:10px;overflow:hidden}.fill{height:100%;border-radius:10px}.details{margin-top:10px;font-size:12px;color:#aabecf}.split{display:grid;grid-template-columns:1.2fr 1fr;gap:19px}.double{display:grid;grid-template-columns:1fr 1fr;gap:19px}.row{display:grid;grid-template-columns:62px 1fr 82px;align-items:center;gap:10px;margin:16px 0;font-size:13px}.section-title{font-size:17px;font-weight:700;margin:0 0 14px}table{border-collapse:collapse;width:100%;font-size:13px}th,td{text-align:left;border-bottom:1px solid #354e61;padding:12px 7px}th{color:#abc1d2;font-size:11px;text-transform:uppercase}.note{color:#b5c6d5;line-height:1.6;font-size:12px}.placeholder{padding:20px;border:1px dashed #5f7689;border-radius:12px;color:#c1d1db}.tiny{font-size:11px;color:#8da5b6;margin-top:25px}.history-list{display:grid;gap:10px}.history-entry{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#203548;border:1px solid #3a5266;padding:14px;border-radius:10px}.history-entry small{color:#a8bdce;display:block;margin-top:5px}.tag{font-size:11px;background:#314c60;color:#d8e8f3;padding:5px 9px;border-radius:20px;white-space:nowrap}.chart-wrap{width:100%;overflow-x:auto}.chart-wrap svg{min-width:530px;width:100%;height:auto}.chart-legend{display:flex;gap:17px;flex-wrap:wrap;font-size:12px;color:#bdcfdd}.chart-legend span:before{content:'';display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--c);margin-right:7px}.subtle-notice{font-size:11px;color:#9bb3c6;margin-top:30px}.nav a:focus-visible{outline:2px solid #79b5dd}.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:18px}.kpi{background:#203548;border:1px solid #395065;border-radius:12px;padding:14px}.kpi b{display:block;font-size:24px;margin-top:4px}.pdf-link{color:#d8e8f3;text-decoration:none;border-bottom:1px dotted #7ba1bc}.pdf-link:hover{color:#fff}@media(max-width:1100px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.split,.double,.kpis{grid-template-columns:1fr}}@media(max-width:650px){.app{display:block}aside{width:100%;padding:17px}.nav{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}.nav a{padding:8px;font-size:12px}.foot{display:none}.co-brand{display:none}main{padding:20px 14px}.cards{grid-template-columns:1fr}.card{min-height:135px}.hero img{height:200px}.hero .content{left:16px;bottom:16px;right:16px}} .scope-matrix{min-width:690px}.scope-matrix th,.scope-matrix td{padding:10px 6px;white-space:nowrap;text-align:center}.scope-matrix th:first-child,.scope-matrix td:first-child{text-align:left;position:sticky;left:0;background:#192c3d}.card .num{font-size:27px}.iv-note{margin-top:8px;font-size:11px;color:#ffc17b;line-height:1.4}</style></head><body><div class="app"><aside><div class="brand-wrap"><div><div class="brand">TVANT</div><div class="sub">CLIENT PORTAL V12</div></div></div><div class="nav"><a class="active" href="#dashboard">▦ Dashboard</a><a href="#evolucion">▥ Progress Trends</a><a href="#historial">◷ Daily History</a></div><div class="foot">MURCH PV<br>Commissioning Dashboard</div><div class="co-brand"><div class="sub" style="margin-bottom:8px">CLIENT</div><img src="greensol-logo.png" alt="GreenSol"></div></aside><main id="dashboard"><div class="top"><div><div class="sub">COMMISSIONING · MURCH PV</div></div><span class="pill" id="syncStatus" role="status">Checking the latest published Daily…</span></div><section class="panel hero"><img src="murch-hero.jpg" alt="Aerial view of Murch PV"><div class="overlay"></div><div class="content"><div class="sub">TVANT + GREENSOL</div><h1>Project Progress</h1><div class="muted">Supervision progress, documentary coverage and Daily Report history.</div></div></section><section class="panel"><div class="filters"><label class="filter">Scope<select id="scope"><option value="project">Entire project</option><option value="circuit">Circuit</option><option value="inverter">Inverter</option><option value="zone">Zone</option></select></label><label class="filter">Select<select id="selection" disabled><option>All</option></select></label><button id="reset">Clear filters</button></div><p class="note" id="scopeNote">Each test is measured against its defined scope.</p><div class="kpis"><div class="kpi"><span class="muted">Current Daily</span><b>Not loaded</b></div><div class="kpi"><span class="muted">Published history</span><b>—</b></div><div class="kpi"><span class="muted">Activities</span><b>8 types</b></div><div class="kpi"><span class="muted">Status</span><b>Pending</b></div></div></section><section class="cards" id="cards"></section><div class="panel" id="ivCurveNotice" style="border-left:4px solid #e3a23b"><strong>IV CURVES — NOT STARTED</strong><p class="note" id="ivCurveNote">IV curve testing has not started because the minimum project-required irradiance has not been met.</p></div><div class="double"><section class="panel"><h2 class="section-title">Completed Tests</h2><table><thead><tr><th>Activity</th><th>Complete</th><th>Scope</th><th>%</th></tr></thead><tbody id="completedTable"></tbody></table><p class="note">Completed progress for the selected scope.</p></section><section class="panel"><h2 class="section-title">Pending Tests</h2><table><thead><tr><th>Activity</th><th>Pending</th><th>Unit</th></tr></thead><tbody id="pending"></tbody></table><p class="note">Figures are reported by TUW. Not reported is different from zero completed.</p></section></div><div class="split"><section class="panel"><h2 class="section-title">Activity Coverage by Circuit</h2><div id="circuits"></div><div class="note">All activities use their own denominator. A dash (—) means Not reported.</div></section><section class="panel"><h2 class="section-title">Selected Scope Summary</h2><table><thead><tr><th>Type</th><th>Value</th></tr></thead><tbody id="summaryTable"></tbody></table><p class="note">Eight activities, using the applicable published scope for this selection.</p></section></div><section class="panel" id="evolucion"><h2 class="section-title">Project Progress Trends</h2><p class="note">Based on historical TUW publications. Only dates with valid records contribute to the trend.</p><div class="chart-wrap"><svg id="evolutionChart" viewBox="0 0 760 290" role="img" aria-label="Progress trends by test activity"></svg></div><div class="chart-legend"><span style="--c:#4b98cf">Vdc</span><span style="--c:#36ad81">Grounding Resistance</span><span style="--c:#e3a23b">VLF</span></div></section><section class="panel" id="historial"><h2 class="section-title">Daily Report History</h2><p class="note">Each new TUW Daily replaces the current report. Earlier reports remain available in the archive.</p><div id="historyList" class="history-list"></div></section><div class="subtle-notice">Public portal for the MURCH PV documentary supervision updates, authorized for publication by GREENSOL.</div></main></div><script>
+'use strict';
+// TVANT public portal: all test activities use their own published denominators.
+const IDS=['vdc','grounding','continuity','iv','vlf','otdr','scada','precomm'];
+const LABELS={vdc:'Polarity & Continuity (Vdc)',grounding:'Grounding Resistance',continuity:'Grounding Continuity',iv:'IV Curves',vlf:'VLF',otdr:'OTDR — Fiber Optic Testing',scada:'SCADA Communications',precomm:'Inverter Precommissioning Inspection'};
+const UNITS={vdc:'LBD',grounding:'INV',continuity:'BLOCK',iv:'LBD',vlf:'circuits',otdr:'circuits',scada:'INV',precomm:'circuits'};
+const el=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const pct=(d,t)=>Number.isFinite(d)&&Number.isFinite(t)&&t>0?100*d/t:null;
+const color=p=>p<25?'#dc3545':p<50?'#e3a23b':p<75?'#4b98cf':'#36ad81';
+const niceDate=d=>d&&/^\d{4}-\d{2}-\d{2}$/.test(d)?new Date(d+'T12:00:00').toLocaleDateString('en-US',{day:'2-digit',month:'short',year:'numeric'}):'Awaiting publication';
+let latest=null,historyItems=[],current='project',selected='';
+function keysFor(scope){return scope==='inverter'?'inv':scope==='zone'?'zone':scope==='circuit'?'circuit':null;}
+function allLabels(){return IDS.map(id=>({id,name:LABELS[id],unit:UNITS[id]}));}
+function defaultDatum(id){return {complete:null,scope:null,unit:UNITS[id],shared:['vlf','otdr','precomm'].includes(id)};}
+function getScopeData(scope,name){
+  const dim=keysFor(scope),breakdown=latest?.breakdown||{};
+  if(!latest)return allLabels().map(a=>({...a,...defaultDatum(a.id)}));
+  if(!dim){
+    const map=Object.fromEntries((latest.activities||[]).map(a=>[a.id,a]));
+    return allLabels().map(a=>({...a,...defaultDatum(a.id),...(map[a.id]||{})}));
   }
-  publication=latest;
-  el('ivCurveNote').textContent=latest.iv_curve_note||'IV curve testing has not started because the minimum project-required irradiance has not been met.';
-  const bs=latest.breakdown?.circuit||[];
-  if(bs.length)circuits=bs.map(b=>[b.name,b.complete,b.scope]);
-  const items=history.items.filter(h=>/^\d{4}-\d{2}-\d{2}$/.test(h.date)&&/^dailys\/[a-zA-Z0-9_.-]+\.pdf$/.test(h.pdf));
-  items.sort((a,b)=>b.date.localeCompare(a.date));
-  const fmtDate=d=>new Date(d+'T12:00:00').toLocaleDateString('en-US',{day:'2-digit',month:'short',year:'numeric'});
-  const metric=(h,id)=>{let a=(h.activities||[]).find(a=>a.id===id);return a?.scope?100*a.complete/a.scope:0};
-  document.querySelectorAll('.kpi b')[0].textContent=fmtDate(latest.report_date||items[0]?.date||'2026-10-17');
-  document.querySelectorAll('.kpi b')[1].textContent=items.length+' reports';
-  document.querySelectorAll('.kpi b')[2].textContent=activities.length+' types';
-  document.querySelectorAll('.kpi b')[3].textContent='Published';
-  el('historyList').innerHTML=items.map((d,i)=>{const known=Array.isArray(d.activities)&&d.activities.length;const metrics=known?`Vdc ${metric(d,'vdc').toFixed(1)}% · Grounding ${metric(d,'grounding').toFixed(1)}% · VLF ${metric(d,'vlf').toFixed(1)}%`:'Progress: see original Daily PDF';return `<div class="history-entry"><div><b>${escapeHtml(fmtDate(d.date))} · Daily Report</b><small>${metrics}</small></div><span class="tag">${i===0?'Current':'Archived'}</span>${d.pdf_available===false?`<span class="tag">PDF not uploaded</span>`:`<a class="pdf-link" href="${d.pdf}" target="_blank" rel="noopener">View PDF</a>`}</div>`}).join('');
-  if(items.filter(h=>Array.isArray(h.activities)&&h.activities.length).length>=2){
-   const data=[...items].filter(h=>Array.isArray(h.activities)&&h.activities.length).reverse().map(h=>({label:fmtDate(h.date),vdc:metric(h,'vdc'),ground:metric(h,'grounding'),vlf:metric(h,'vlf')}));
-   const svg=el('evolutionChart'),w=760,h=290,l=45,r=16,t=18,b=42,iw=w-l-r,ih=h-t-b,y=v=>t+ih*(1-v/100),x=i=>l+iw*i/(data.length-1);
-   let out='';for(let v=0;v<=100;v+=25)out+=`<line x1="${l}" y1="${y(v)}" x2="${w-r}" y2="${y(v)}" stroke="#385166" stroke-dasharray="4 5"/><text x="${l-9}" y="${y(v)+4}" text-anchor="end" font-size="12" fill="#b3c5d2">${v}%</text>`;
-   data.forEach((d,i)=>out+=`<text x="${x(i)}" y="${h-13}" text-anchor="middle" font-size="11" fill="#b3c5d2">${escapeHtml(d.label)}</text>`);
-   for(const [key,c] of [['vdc','#4b98cf'],['ground','#36ad81'],['vlf','#e3a23b']]){out+=`<polyline fill="none" stroke="${c}" stroke-width="3" points="${data.map((d,i)=>x(i)+','+y(d[key])).join(' ')}"/>`}
-   svg.innerHTML=out;
+  const declared=breakdown.activities?.[dim]?.[name];
+  if(declared){
+    return allLabels().map(a=>({...a,...defaultDatum(a.id),...(declared[a.id]||{})}));
   }
-  el('summaryTable').dataset.today=latest.report_date||items[0]?.date||'';
-  el('scope').value='project';fillScope();
-  el('syncStatus').textContent='Daily published · '+fmtDate(latest.report_date||items[0]?.date||'2026-10-17');
- }catch(e){console.warn('No publication manifest available',e);el('syncStatus').textContent='Online Daily unavailable · Check publication files';el('syncStatus').style.borderColor='#ad704b';}
+  // Compatibility with historic TUW publications: old per-scope rows are Vdc ONLY.
+  // Do not copy project-wide completion counts to the selected circuit/zone/inverter.
+  const vdc=(breakdown[dim]||[]).find(x=>x.name===name);
+  const legacy={};
+  if(vdc){
+    legacy.vdc={complete:vdc.complete,scope:vdc.scope,unit:'LBD'};
+    // If project-wide IV count is proven zero, each subset also has zero completed tests.
+    const iv=(latest.activities||[]).find(a=>a.id==='iv');
+    legacy.iv={complete:iv?.complete===0?0:null,scope:vdc.scope,unit:'LBD'};
+  }
+  if(dim==='circuit'){
+    const pc=(breakdown.precomm_circuit||[]).find(x=>x.circuit===name);
+    if(pc)legacy.precomm={complete:pc.ok?1:0,scope:1,unit:'circuits',shared:true};
+    const ot=(breakdown.otdr_circuit||[]).find(x=>x.circuit===name);
+    if(ot)legacy.otdr={complete:ot.complete,scope:1,unit:'circuits',shared:true,reported:ot.reported,in_review:ot.in_review,fibers:ot.fibers};
+  }
+  return allLabels().map(a=>({...a,...defaultDatum(a.id),...(legacy[a.id]||{})}));
 }
+function unitsLabel(row){const u=row.unit||UNITS[row.id];return row.shared&&current!=='project'?u+' · shared':u;}
+function fillScope(){
+ current=el('scope').value;
+ const dim=keysFor(current);
+ const items=dim?(latest?.breakdown?.[dim]||[]).map(x=>String(x.name)):[];
+ const select=el('selection');
+ select.replaceChildren();
+ const base=document.createElement('option');base.value='';base.textContent=dim?'Choose '+current:'All';select.appendChild(base);
+ for(const name of items){const option=document.createElement('option');option.value=name;option.textContent=name;select.appendChild(option);}
+ select.disabled=!dim; selected='';render();
+}
+function scopeNote(){
+ if(current==='project')return 'Every activity uses its own project-wide denominator. Counts represent documentary coverage, not acceptance.';
+ if(!selected)return 'Select a '+current+' to view all eight test activities and their respective scopes.';
+ if(current==='inverter'||current==='zone')return 'LBD and inverter/block activities are specific to this selection. VLF, OTDR and Precommissioning are shared circuit-level tests, never additional inverter tests.';
+ return 'All activities for this circuit: LBD tests, inverter/block tests, and shared circuit-level tests. Unpublished results appear as Not reported.';
+}
+function render(){
+ selected=el('selection').value;el('scopeNote').textContent=scopeNote();
+ if(current!=='project'&&!selected){
+  el('cards').innerHTML='<div class="placeholder">Choose a '+esc(current)+' to view all test activities.</div>';
+  el('pending').innerHTML='<tr><td colspan="3">Select a scope</td></tr>';
+  el('completedTable').innerHTML='<tr><td colspan="4">Select a scope</td></tr>';
+  el('summaryTable').innerHTML='<tr><td>Selection</td><td>Required</td></tr>';
+  drawCircuitCoverage();return;
+ }
+ const rows=getScopeData(current,selected);
+ const card=row=>{
+  const measured=Number.isFinite(row.complete)&&Number.isFinite(row.scope)&&row.scope>0;
+  const p=measured?pct(row.complete,row.scope):null;
+  const status=row.scope===0?'Not applicable':measured?p.toFixed(1)+'%':'Not reported';
+  const scopeText=Number.isFinite(row.scope)?row.scope+' '+esc(unitsLabel(row)):'Scope not published';
+  const completed=measured?row.complete+' / '+scopeText:scopeText;
+  const extra=[];
+  if(row.shared&&current!=='project')extra.push('Shared circuit status');
+  if(Number.isFinite(row.reported)&&row.id==='otdr')extra.push(row.reported+' documented ring(s)');
+  if(Number.isFinite(row.in_review)&&row.in_review>0)extra.push(row.in_review+' in review');
+  if(Number.isFinite(row.fibers)&&row.fibers>0)extra.push(row.fibers+' fibers');
+  return `<article class="card"><div class="name">${esc(row.name)}</div><div class="num">${esc(status)}</div><div class="track"><div class="fill" style="width:${p??0}%;background:${p===null?'#62798a':color(p)}"></div></div><div class="details">${completed}${extra.length?' · '+esc(extra.join(' · ')):''}</div>${row.id==='iv'&&row.complete===0?'<div class="iv-note">Not started — minimum project-required irradiance not met.</div>':''}</article>`;
+ };
+ el('cards').innerHTML=rows.map(card).join('');
+ el('completedTable').innerHTML=rows.map(r=>{
+  const has=Number.isFinite(r.complete)&&Number.isFinite(r.scope);
+  return `<tr><td>${esc(r.name)}${r.shared&&current!=='project'?'<small class="tag" style="margin-left:6px">Shared</small>':''}</td><td>${has?r.complete:'Not reported'}</td><td>${Number.isFinite(r.scope)?r.scope+' '+esc(r.unit):'Not reported'}</td><td>${has&&r.scope>0?pct(r.complete,r.scope).toFixed(1)+'%':'—'}</td></tr>`;
+ }).join('');
+ el('pending').innerHTML=rows.map(r=>{
+  const known=Number.isFinite(r.complete)&&Number.isFinite(r.scope);
+  const remaining=known?Math.max(0,r.scope-r.complete):'Not reported';
+  return `<tr><td>${esc(r.name)}</td><td>${remaining}</td><td>${esc(r.unit)}</td></tr>`;
+ }).join('');
+ const published=rows.filter(r=>Number.isFinite(r.complete)&&Number.isFinite(r.scope));
+ const pending=rows.filter(r=>!Number.isFinite(r.complete));
+ el('summaryTable').innerHTML=`<tr><td>Selected scope</td><td>${esc(current==='project'?'Entire project':selected)}</td></tr>`+
+ `<tr><td>Activities</td><td>${rows.length}</td></tr>`+
+ `<tr><td>Published breakdowns</td><td>${published.length} / ${rows.length}</td></tr>`+
+ `<tr><td>Awaiting TUW detail</td><td>${pending.length}</td></tr>`+
+ `<tr><td>Latest Daily</td><td>${esc(latest?.report_date||'Awaiting publication')}</td></tr>`;
+ drawCircuitCoverage();
+}
+function drawCircuitCoverage(){
+ const circuits=(latest?.breakdown?.circuit||[]).map(x=>x.name);
+ if(!circuits.length){el('circuits').textContent='Circuit data has not been published.';return;}
+ const header='<table class="scope-matrix"><thead><tr><th>Circuit</th>'+IDS.map(id=>'<th title="'+esc(LABELS[id])+'">'+esc(({vdc:'Vdc',grounding:'Ground R',continuity:'Ground C',iv:'IV',vlf:'VLF',otdr:'OTDR',scada:'SCADA',precomm:'Precomm'})[id])+'</th>').join('')+'</tr></thead><tbody>';
+ const body=circuits.map(c=>{
+  const map=Object.fromEntries(getScopeData('circuit',c).map(x=>[x.id,x]));
+  const cells=IDS.map(id=>{
+   const x=map[id];const known=Number.isFinite(x.complete)&&Number.isFinite(x.scope);
+   return '<td title="'+esc(LABELS[id]+': '+(known?x.complete+' / '+x.scope+' '+x.unit:'Not reported'))+'">'+(known?x.complete+'/'+x.scope:'—')+'</td>';
+  }).join('');
+  return '<tr><th>'+esc(c)+'</th>'+cells+'</tr>';
+ }).join('');
+ el('circuits').innerHTML='<div class="chart-wrap">'+header+body+'</tbody></table></div>';
+}
+function chart(history){
+ const h=history.filter(x=>Array.isArray(x.activities)&&x.activities.length).reverse();
+ if(h.length<2){el('evolutionChart').innerHTML='<text x="30" y="40" fill="#b3c5d2">Trend available when two dated publications exist.</text>';return;}
+ const svg=el('evolutionChart'),W=760,H=290,L=45,R=16,T=18,B=42,iw=W-L-R,ih=H-T-B;
+ const x=i=>L+iw*i/(h.length-1),y=v=>T+ih*(1-v/100);
+ const lines=Array.from({length:5},(_,i)=>{const val=i*25;return `<line x1="${L}" y1="${y(val)}" x2="${W-R}" y2="${y(val)}" stroke="#385166" stroke-dasharray="4 5"/><text x="${L-9}" y="${y(val)+4}" text-anchor="end" font-size="12" fill="#b3c5d2">${val}%</text>`;}).join('');
+ const dates=h.map((d,i)=>`<text x="${x(i)}" y="${H-13}" text-anchor="middle" font-size="11" fill="#b3c5d2">${esc(d.date.slice(5))}</text>`).join('');
+ let shapes=lines+dates;
+ for(const [id,c] of [['vdc','#4b98cf'],['grounding','#36ad81'],['vlf','#e3a23b']]){
+  let sequence=[];
+  for(let i=0;i<h.length;i++){
+   const a=h[i].activities.find(a=>a.id===id);
+   const v=a&&a.scope>0&&Number.isFinite(a.complete)?pct(a.complete,a.scope):null;
+   if(v===null){if(sequence.length>1)shapes+=`<polyline fill="none" stroke="${c}" stroke-width="3" points="${sequence.join(' ')}"/>`;sequence=[];continue;}
+   sequence.push(x(i)+','+y(v));
+  }
+  if(sequence.length>1)shapes+=`<polyline fill="none" stroke="${c}" stroke-width="3" points="${sequence.join(' ')}"/>`;
+ }
+ svg.innerHTML=shapes;
+}
+// Fetch the two publication files independently. A missing history index may never
+// prevent an otherwise valid, complete activity snapshot from being displayed.
+async function getPublication(path){
+ const response=await fetch(path,{cache:'no-store'});
+ if(!response.ok)throw Error(path+' HTTP '+response.status);
+ return response.json();
+}
+function normalizeHistory(items){
+ const dates=new Map();
+ for(const entry of items||[]){
+  if(!entry||!/^\d{4}-\d{2}-\d{2}$/.test(entry.date||''))continue;
+  const wanted='dailys/MURCH_'+entry.date+'_Project_All.pdf';
+  // References are intentionally limited to the project's own static PDF folder.
+  if(entry.pdf!==wanted)continue;
+  const prev=dates.get(entry.date);
+  const next={...entry};
+  if(!prev||((next.activities||[]).length>(prev.activities||[]).length))dates.set(entry.date,next);
+ }
+ return [...dates.values()].sort((a,b)=>b.date.localeCompare(a.date));
+}
+function displayHistory(){
+ const boxes=document.querySelectorAll('.kpi b');
+ boxes[1].textContent=historyItems.length+' reports';
+ el('historyList').innerHTML=historyItems.length?historyItems.map((i,n)=>{
+   const metrics=(i.activities||[]).filter(a=>IDS.includes(a.id)&&a.scope&&Number.isFinite(a.complete)).slice(0,3).map(a=>esc(a.name||LABELS[a.id]||a.id)+' '+pct(a.complete,a.scope).toFixed(1)+'%').join(' · ');
+   const pdf=i.pdf_available===false?'<span class="tag">PDF pending upload</span>':`<a class="pdf-link" href="${esc(i.pdf)}" target="_blank" rel="noopener">View original PDF</a>`;
+   return `<div class="history-entry"><div><b>${esc(niceDate(i.date))} · Daily Report</b><small>${metrics||'Progress: see original Daily PDF'}</small></div><span class="tag">${n?'Archived':'Latest'}</span>${pdf}</div>`;
+ }).join(''):'<div class="placeholder">No Daily Report index published yet. The latest activity data remain available.</div>';
+ chart(historyItems);
+}
+async function loadPublishedDaily(){
+ const [l,h]=await Promise.allSettled([getPublication('data/latest.json'),getPublication('data/history.json')]);
+ if(l.status==='fulfilled'&&l.value?.schema==='tvant.client-portal.snapshot.v1'&&Array.isArray(l.value.activities)){
+  latest=l.value;
+  el('ivCurveNote').textContent=latest.iv_curve_note||'IV curve testing has not started because the minimum project-required irradiance has not been met.';
+  el('scope').value='project';fillScope();
+ }else{
+  console.warn('Latest snapshot unavailable:',l.status==='rejected'?l.reason:l.value);
+  el('cards').innerHTML='<div class="placeholder">Activity snapshot not available. Check data/latest.json.</div>';
+ }
+ if(h.status==='fulfilled'&&Array.isArray(h.value?.items)){
+  historyItems=normalizeHistory(h.value.items);
+ }else{
+  console.warn('Daily history unavailable:',h.status==='rejected'?h.reason:h.value);
+  historyItems=[];
+ }
+ displayHistory();
+ const boxes=document.querySelectorAll('.kpi b');
+ boxes[0].textContent=niceDate(latest?.report_date||historyItems[0]?.date);
+ boxes[2].textContent=IDS.length+' types';
+ boxes[3].textContent=latest?'Published':'Unavailable';
+ el('syncStatus').textContent=latest?'Daily published · '+niceDate(latest.report_date||historyItems[0]?.date):'Latest publication unavailable';
+}
+el('scope').addEventListener('change',fillScope);
+el('selection').addEventListener('change',render);
+el('reset').addEventListener('click',()=>{el('scope').value='project';fillScope();});
+el('historyList').textContent='Loading TUW Daily archive…';
 loadPublishedDaily();
+
 </script></body></html>
