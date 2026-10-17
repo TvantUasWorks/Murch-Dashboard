@@ -1,0 +1,224 @@
+{
+  "schema": "tvant.client-portal.snapshot.v1",
+  "project": "MURCH PV",
+  "published_at": "2026-10-17T15:54:07+00:00",
+  "counting_basis": "Documentary coverage; not electrical acceptance. Vdc may include legacy unclassified records where no explicit Vdc are present.",
+  "activities": [
+    {
+      "id": "vdc",
+      "name": "Polarity & Continuity (Vdc)",
+      "complete": 275,
+      "scope": 419,
+      "unit": "LBD"
+    },
+    {
+      "id": "grounding",
+      "name": "Grounding Resistance",
+      "complete": 9,
+      "scope": 23,
+      "unit": "INV"
+    },
+    {
+      "id": "continuity",
+      "name": "Grounding Continuity",
+      "complete": 5,
+      "scope": 23,
+      "unit": "BLOCK"
+    },
+    {
+      "id": "iv",
+      "name": "IV Curves",
+      "complete": 0,
+      "scope": 419,
+      "unit": "LBD"
+    },
+    {
+      "id": "vlf",
+      "name": "VLF",
+      "complete": 1,
+      "scope": 4,
+      "unit": "circuits"
+    }
+  ],
+  "breakdown": {
+    "circuit": [
+      {
+        "name": "11A",
+        "scope": 92,
+        "complete": 90
+      },
+      {
+        "name": "11B",
+        "scope": 110,
+        "complete": 70
+      },
+      {
+        "name": "12A",
+        "scope": 110,
+        "complete": 109
+      },
+      {
+        "name": "12B",
+        "scope": 107,
+        "complete": 6
+      }
+    ],
+    "zone": [
+      {
+        "name": "A",
+        "scope": 54,
+        "complete": 52
+      },
+      {
+        "name": "B",
+        "scope": 35,
+        "complete": 0
+      },
+      {
+        "name": "C",
+        "scope": 38,
+        "complete": 38
+      },
+      {
+        "name": "D",
+        "scope": 18,
+        "complete": 0
+      },
+      {
+        "name": "E",
+        "scope": 128,
+        "complete": 76
+      },
+      {
+        "name": "F",
+        "scope": 111,
+        "complete": 75
+      },
+      {
+        "name": "G",
+        "scope": 35,
+        "complete": 34
+      }
+    ],
+    "inv": [
+      {
+        "name": "INV01",
+        "scope": 19,
+        "complete": 19
+      },
+      {
+        "name": "INV02",
+        "scope": 16,
+        "complete": 16
+      },
+      {
+        "name": "INV03",
+        "scope": 19,
+        "complete": 17
+      },
+      {
+        "name": "INV04",
+        "scope": 19,
+        "complete": 19
+      },
+      {
+        "name": "INV05",
+        "scope": 18,
+        "complete": 18
+      },
+      {
+        "name": "INV06",
+        "scope": 20,
+        "complete": 20
+      },
+      {
+        "name": "INV07",
+        "scope": 17,
+        "complete": 0
+      },
+      {
+        "name": "INV08",
+        "scope": 18,
+        "complete": 0
+      },
+      {
+        "name": "INV09",
+        "scope": 18,
+        "complete": 18
+      },
+      {
+        "name": "INV10",
+        "scope": 18,
+        "complete": 0
+      },
+      {
+        "name": "INV11",
+        "scope": 19,
+        "complete": 19
+      },
+      {
+        "name": "INV12",
+        "scope": 19,
+        "complete": 4
+      },
+      {
+        "name": "INV13",
+        "scope": 18,
+        "complete": 6
+      },
+      {
+        "name": "INV14",
+        "scope": 17,
+        "complete": 4
+      },
+      {
+        "name": "INV15",
+        "scope": 18,
+        "complete": 6
+      },
+      {
+        "name": "INV16",
+        "scope": 18,
+        "complete": 0
+      },
+      {
+        "name": "INV17",
+        "scope": 18,
+        "complete": 0
+      },
+      {
+        "name": "INV18",
+        "scope": 19,
+        "complete": 19
+      },
+      {
+        "name": "INV19",
+        "scope": 17,
+        "complete": 17
+      },
+      {
+        "name": "INV20",
+        "scope": 18,
+        "complete": 17
+      },
+      {
+        "name": "INV21",
+        "scope": 19,
+        "complete": 19
+      },
+      {
+        "name": "INV22",
+        "scope": 19,
+        "complete": 19
+      },
+      {
+        "name": "INV23",
+        "scope": 18,
+        "complete": 18
+      }
+    ]
+  },
+  "visibility": "Aggregated client publication only; no raw measurements, names, attachments or original results.",
+  "report_date": "2026-10-17",
+  "iv_curve_note": "IV curve testing has not started because the minimum project-required irradiance has not been met."
+}
