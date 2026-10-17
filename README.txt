@@ -1,0 +1,1 @@
+Upload index.html to the repository root. Upload latest.json and history.json inside data/. The six archive PDF files from Oct 11–16 MUST be uploaded to dailys/ using the exact filenames listed in history.json; otherwise links will not work. No estimated historical percentages are used. Current Daily PDF 17 Oct should already be published.
