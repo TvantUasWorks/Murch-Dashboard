@@ -1,8 +1,8 @@
 {
   "schema": "tvant.client-portal.snapshot.v1",
   "project": "MURCH PV",
-  "published_at": "2026-10-17T15:54:07+00:00",
-  "counting_basis": "Documentary coverage; not electrical acceptance. Vdc may include legacy unclassified records where no explicit Vdc are present.",
+  "published_at": "2026-10-17T22:08:36+00:00",
+  "counting_basis": "Documentary coverage, not electrical acceptance. Shared circuit tests are not independent tests of every linked inverter.",
   "activities": [
     {
       "id": "vdc",
@@ -37,188 +37,2152 @@
       "name": "VLF",
       "complete": 1,
       "scope": 4,
-      "unit": "circuits"
+      "unit": "circuits",
+      "shared": true
+    },
+    {
+      "id": "otdr",
+      "name": "OTDR — Fiber Optic Testing",
+      "complete": 1,
+      "scope": 4,
+      "unit": "circuits",
+      "shared": true,
+      "reported": 1,
+      "in_review": 0,
+      "counting_basis": "Supervisor-assigned ring documentary status; not optical acceptance. Endpoint names do not block closure."
+    },
+    {
+      "id": "scada",
+      "name": "SCADA Communications",
+      "complete": 0,
+      "scope": 23,
+      "unit": "INV"
+    },
+    {
+      "id": "precomm",
+      "name": "Inverter Precommissioning Inspection",
+      "complete": 1,
+      "scope": 4,
+      "unit": "circuits",
+      "shared": true,
+      "counting_basis": "Manual OK by circuit; not electrical acceptance."
     }
   ],
   "breakdown": {
     "circuit": [
       {
         "name": "11A",
+        "complete": 90,
         "scope": 92,
-        "complete": 90
+        "unit": "LBD"
       },
       {
         "name": "11B",
+        "complete": 70,
         "scope": 110,
-        "complete": 70
+        "unit": "LBD"
       },
       {
         "name": "12A",
+        "complete": 109,
         "scope": 110,
-        "complete": 109
+        "unit": "LBD"
       },
       {
         "name": "12B",
+        "complete": 6,
         "scope": 107,
-        "complete": 6
-      }
-    ],
-    "zone": [
-      {
-        "name": "A",
-        "scope": 54,
-        "complete": 52
-      },
-      {
-        "name": "B",
-        "scope": 35,
-        "complete": 0
-      },
-      {
-        "name": "C",
-        "scope": 38,
-        "complete": 38
-      },
-      {
-        "name": "D",
-        "scope": 18,
-        "complete": 0
-      },
-      {
-        "name": "E",
-        "scope": 128,
-        "complete": 76
-      },
-      {
-        "name": "F",
-        "scope": 111,
-        "complete": 75
-      },
-      {
-        "name": "G",
-        "scope": 35,
-        "complete": 34
+        "unit": "LBD"
       }
     ],
     "inv": [
       {
         "name": "INV01",
+        "complete": 19,
         "scope": 19,
-        "complete": 19
+        "unit": "LBD"
       },
       {
         "name": "INV02",
+        "complete": 16,
         "scope": 16,
-        "complete": 16
+        "unit": "LBD"
       },
       {
         "name": "INV03",
+        "complete": 17,
         "scope": 19,
-        "complete": 17
+        "unit": "LBD"
       },
       {
         "name": "INV04",
+        "complete": 19,
         "scope": 19,
-        "complete": 19
+        "unit": "LBD"
       },
       {
         "name": "INV05",
+        "complete": 18,
         "scope": 18,
-        "complete": 18
+        "unit": "LBD"
       },
       {
         "name": "INV06",
+        "complete": 20,
         "scope": 20,
-        "complete": 20
+        "unit": "LBD"
       },
       {
         "name": "INV07",
+        "complete": 0,
         "scope": 17,
-        "complete": 0
+        "unit": "LBD"
       },
       {
         "name": "INV08",
+        "complete": 0,
         "scope": 18,
-        "complete": 0
+        "unit": "LBD"
       },
       {
         "name": "INV09",
+        "complete": 18,
         "scope": 18,
-        "complete": 18
+        "unit": "LBD"
       },
       {
         "name": "INV10",
+        "complete": 0,
         "scope": 18,
-        "complete": 0
+        "unit": "LBD"
       },
       {
         "name": "INV11",
+        "complete": 19,
         "scope": 19,
-        "complete": 19
+        "unit": "LBD"
       },
       {
         "name": "INV12",
+        "complete": 4,
         "scope": 19,
-        "complete": 4
+        "unit": "LBD"
       },
       {
         "name": "INV13",
+        "complete": 6,
         "scope": 18,
-        "complete": 6
+        "unit": "LBD"
       },
       {
         "name": "INV14",
+        "complete": 4,
         "scope": 17,
-        "complete": 4
+        "unit": "LBD"
       },
       {
         "name": "INV15",
+        "complete": 6,
         "scope": 18,
-        "complete": 6
+        "unit": "LBD"
       },
       {
         "name": "INV16",
+        "complete": 0,
         "scope": 18,
-        "complete": 0
+        "unit": "LBD"
       },
       {
         "name": "INV17",
+        "complete": 0,
         "scope": 18,
-        "complete": 0
+        "unit": "LBD"
       },
       {
         "name": "INV18",
+        "complete": 19,
         "scope": 19,
-        "complete": 19
+        "unit": "LBD"
       },
       {
         "name": "INV19",
+        "complete": 17,
         "scope": 17,
-        "complete": 17
+        "unit": "LBD"
       },
       {
         "name": "INV20",
+        "complete": 17,
         "scope": 18,
-        "complete": 17
+        "unit": "LBD"
       },
       {
         "name": "INV21",
+        "complete": 19,
         "scope": 19,
-        "complete": 19
+        "unit": "LBD"
       },
       {
         "name": "INV22",
+        "complete": 19,
         "scope": 19,
-        "complete": 19
+        "unit": "LBD"
       },
       {
         "name": "INV23",
+        "complete": 18,
         "scope": 18,
-        "complete": 18
+        "unit": "LBD"
+      }
+    ],
+    "zone": [
+      {
+        "name": "A",
+        "complete": 52,
+        "scope": 54,
+        "unit": "LBD"
+      },
+      {
+        "name": "B",
+        "complete": 0,
+        "scope": 35,
+        "unit": "LBD"
+      },
+      {
+        "name": "C",
+        "complete": 38,
+        "scope": 38,
+        "unit": "LBD"
+      },
+      {
+        "name": "D",
+        "complete": 0,
+        "scope": 18,
+        "unit": "LBD"
+      },
+      {
+        "name": "E",
+        "complete": 76,
+        "scope": 128,
+        "unit": "LBD"
+      },
+      {
+        "name": "F",
+        "complete": 75,
+        "scope": 111,
+        "unit": "LBD"
+      },
+      {
+        "name": "G",
+        "complete": 34,
+        "scope": 35,
+        "unit": "LBD"
+      }
+    ],
+    "activities": {
+      "circuit": {
+        "11A": {
+          "vdc": {
+            "complete": 90,
+            "scope": 92,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 5,
+            "scope": 5,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 5,
+            "scope": 5,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 92,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 1,
+            "in_review": 0,
+            "fibers": 48
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 5,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "11B": {
+          "vdc": {
+            "complete": 70,
+            "scope": 110,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 0,
+            "scope": 6,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 6,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 110,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 6,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "12A": {
+          "vdc": {
+            "complete": 109,
+            "scope": 110,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 4,
+            "scope": 6,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 6,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 110,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 6,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "12B": {
+          "vdc": {
+            "complete": 6,
+            "scope": 107,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 0,
+            "scope": 6,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 6,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 107,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 6,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        }
+      },
+      "inv": {
+        "INV01": {
+          "vdc": {
+            "complete": 19,
+            "scope": 19,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 19,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 1,
+            "in_review": 0,
+            "fibers": 48
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV02": {
+          "vdc": {
+            "complete": 16,
+            "scope": 16,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 16,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 1,
+            "in_review": 0,
+            "fibers": 48
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV03": {
+          "vdc": {
+            "complete": 17,
+            "scope": 19,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 19,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 1,
+            "in_review": 0,
+            "fibers": 48
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV04": {
+          "vdc": {
+            "complete": 19,
+            "scope": 19,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 19,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV05": {
+          "vdc": {
+            "complete": 18,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 1,
+            "in_review": 0,
+            "fibers": 48
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV06": {
+          "vdc": {
+            "complete": 20,
+            "scope": 20,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 20,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 1,
+            "in_review": 0,
+            "fibers": 48
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV07": {
+          "vdc": {
+            "complete": 0,
+            "scope": 17,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 17,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV08": {
+          "vdc": {
+            "complete": 0,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV09": {
+          "vdc": {
+            "complete": 18,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV10": {
+          "vdc": {
+            "complete": 0,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV11": {
+          "vdc": {
+            "complete": 19,
+            "scope": 19,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 19,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV12": {
+          "vdc": {
+            "complete": 4,
+            "scope": 19,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 19,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV13": {
+          "vdc": {
+            "complete": 6,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV14": {
+          "vdc": {
+            "complete": 4,
+            "scope": 17,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 17,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV15": {
+          "vdc": {
+            "complete": 6,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV16": {
+          "vdc": {
+            "complete": 0,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV17": {
+          "vdc": {
+            "complete": 0,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV18": {
+          "vdc": {
+            "complete": 19,
+            "scope": 19,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 19,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV19": {
+          "vdc": {
+            "complete": 17,
+            "scope": 17,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 17,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV20": {
+          "vdc": {
+            "complete": 17,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV21": {
+          "vdc": {
+            "complete": 19,
+            "scope": 19,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 19,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV22": {
+          "vdc": {
+            "complete": 19,
+            "scope": 19,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 19,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "INV23": {
+          "vdc": {
+            "complete": 18,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        }
+      },
+      "zone": {
+        "A": {
+          "vdc": {
+            "complete": 52,
+            "scope": 54,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 3,
+            "scope": 3,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 3,
+            "scope": 3,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 54,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 1,
+            "in_review": 0,
+            "fibers": 48
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 3,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "B": {
+          "vdc": {
+            "complete": 0,
+            "scope": 35,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 0,
+            "scope": 2,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 2,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 35,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 2,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "C": {
+          "vdc": {
+            "complete": 38,
+            "scope": 38,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 2,
+            "scope": 2,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 2,
+            "scope": 2,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 38,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 1,
+            "in_review": 0,
+            "fibers": 48
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 2,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 1,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "D": {
+          "vdc": {
+            "complete": 0,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 18,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "E": {
+          "vdc": {
+            "complete": 76,
+            "scope": 128,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 0,
+            "scope": 7,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 7,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 128,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 2,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 2,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 7,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 2,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "F": {
+          "vdc": {
+            "complete": 75,
+            "scope": 111,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 4,
+            "scope": 6,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 6,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 111,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 2,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 2,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 6,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 2,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        },
+        "G": {
+          "vdc": {
+            "complete": 34,
+            "scope": 35,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "complete": 0,
+            "scope": 2,
+            "unit": "INV"
+          },
+          "continuity": {
+            "complete": 0,
+            "scope": 2,
+            "unit": "BLOCK"
+          },
+          "iv": {
+            "complete": 0,
+            "scope": 35,
+            "unit": "LBD"
+          },
+          "vlf": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          },
+          "otdr": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter.",
+            "reported": 0,
+            "in_review": 0,
+            "fibers": 0
+          },
+          "scada": {
+            "complete": 0,
+            "scope": 2,
+            "unit": "INV"
+          },
+          "precomm": {
+            "complete": 0,
+            "scope": 1,
+            "unit": "circuits",
+            "shared": true,
+            "note": "Circuit-level test shared by linked inverters/zones; never counted once per inverter."
+          }
+        }
+      }
+    },
+    "otdr_circuit": [
+      {
+        "circuit": "11A",
+        "reported": 1,
+        "in_review": 0,
+        "complete": 1,
+        "ring_closed": true,
+        "status": "DOCUMENTARY CLOSED",
+        "links": 5,
+        "fibers": 48,
+        "inverters": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "inverter_status": {
+          "INV01": "DOCUMENTED",
+          "INV02": "DOCUMENTED",
+          "INV03": "DOCUMENTED",
+          "INV05": "DOCUMENTED",
+          "INV06": "DOCUMENTED"
+        },
+        "inverters_verified": 0,
+        "inverters_documented": 5,
+        "inverters_required": 5,
+        "missing_inverters": [],
+        "scope_confirmed": false,
+        "topology_verified": false,
+        "expected_links": null,
+        "missing_links": [],
+        "unplanned_links": [],
+        "ring_reasons": [],
+        "reviewed_links": 0,
+        "reported_links": [
+          "UNRESOLVED_5",
+          "UNRESOLVED_4",
+          "FIELD ↔ HUT",
+          "PB01 ↔ PB02",
+          "FIELD ↔ HUT"
+        ],
+        "closure_by": "Moises Jimenez",
+        "closure_note": "Ok",
+        "source_circuits": [
+          "11A"
+        ]
+      },
+      {
+        "circuit": "11B",
+        "reported": 0,
+        "in_review": 0,
+        "complete": 0,
+        "ring_closed": false,
+        "status": "OPEN / PENDING",
+        "links": 0,
+        "fibers": 0,
+        "inverters": [],
+        "inverter_status": {},
+        "inverters_verified": 0,
+        "inverters_documented": 0,
+        "inverters_required": 0,
+        "missing_inverters": [],
+        "scope_confirmed": false,
+        "topology_verified": false,
+        "expected_links": null,
+        "missing_links": [],
+        "unplanned_links": [],
+        "ring_reasons": [
+          "Documentary ring closing not confirmed by supervisor"
+        ],
+        "reviewed_links": 0,
+        "reported_links": [],
+        "closure_by": "",
+        "closure_note": "",
+        "source_circuits": []
+      },
+      {
+        "circuit": "12A",
+        "reported": 0,
+        "in_review": 0,
+        "complete": 0,
+        "ring_closed": false,
+        "status": "OPEN / PENDING",
+        "links": 0,
+        "fibers": 0,
+        "inverters": [],
+        "inverter_status": {},
+        "inverters_verified": 0,
+        "inverters_documented": 0,
+        "inverters_required": 0,
+        "missing_inverters": [],
+        "scope_confirmed": false,
+        "topology_verified": false,
+        "expected_links": null,
+        "missing_links": [],
+        "unplanned_links": [],
+        "ring_reasons": [
+          "Documentary ring closing not confirmed by supervisor"
+        ],
+        "reviewed_links": 0,
+        "reported_links": [],
+        "closure_by": "",
+        "closure_note": "",
+        "source_circuits": []
+      },
+      {
+        "circuit": "12B",
+        "reported": 0,
+        "in_review": 0,
+        "complete": 0,
+        "ring_closed": false,
+        "status": "OPEN / PENDING",
+        "links": 0,
+        "fibers": 0,
+        "inverters": [],
+        "inverter_status": {},
+        "inverters_verified": 0,
+        "inverters_documented": 0,
+        "inverters_required": 0,
+        "missing_inverters": [],
+        "scope_confirmed": false,
+        "topology_verified": false,
+        "expected_links": null,
+        "missing_links": [],
+        "unplanned_links": [],
+        "ring_reasons": [
+          "Documentary ring closing not confirmed by supervisor"
+        ],
+        "reviewed_links": 0,
+        "reported_links": [],
+        "closure_by": "",
+        "closure_note": "",
+        "source_circuits": []
+      }
+    ],
+    "precomm_circuit": [
+      {
+        "circuit": "11A",
+        "ok": true,
+        "metadata_pending": false
+      },
+      {
+        "circuit": "11B",
+        "ok": false,
+        "metadata_pending": false
+      },
+      {
+        "circuit": "12A",
+        "ok": false,
+        "metadata_pending": false
+      },
+      {
+        "circuit": "12B",
+        "ok": false,
+        "metadata_pending": false
       }
     ]
   },
+  "scope_method": "Catalog-linked LBD, INV, BLOCK and unique circuit denominators; no double-counting within a scope.",
   "visibility": "Aggregated client publication only; no raw measurements, names, attachments or original results.",
-  "report_date": "2026-10-17",
+  "otdr_ring_schema": "tvant.otdr.ring.v3",
+  "report_date": "2026-10-18",
   "iv_curve_note": "IV curve testing has not started because the minimum project-required irradiance has not been met."
 }
