@@ -1,7 +1,7 @@
 {
   "schema": "tvant.client-portal.snapshot.v1",
   "project": "MURCH PV",
-  "published_at": "2026-10-17T17:23:50+00:00",
+  "published_at": "2026-10-17T15:54:07+00:00",
   "counting_basis": "Documentary coverage; not electrical acceptance. Vdc may include legacy unclassified records where no explicit Vdc are present.",
   "activities": [
     {
@@ -34,31 +34,10 @@
     },
     {
       "id": "vlf",
-      "name": "VLF",
+      "name": "VLF + Battery Bank",
       "complete": 1,
       "scope": 4,
       "unit": "circuits"
-    },
-    {
-      "id": "otdr",
-      "name": "OTDR — Fiber Optic Testing",
-      "complete": 0,
-      "scope": 23,
-      "unit": "INV"
-    },
-    {
-      "id": "scada",
-      "name": "SCADA Communications",
-      "complete": 0,
-      "scope": 23,
-      "unit": "INV"
-    },
-    {
-      "id": "precomm",
-      "name": "Inverter Precommissioning Inspection",
-      "complete": 0,
-      "scope": 23,
-      "unit": "INV"
     }
   ],
   "breakdown": {
@@ -240,6 +219,5 @@
     ]
   },
   "visibility": "Aggregated client publication only; no raw measurements, names, attachments or original results.",
-  "report_date": "2026-10-17",
-  "iv_curve_note": "IV curve testing has not started because the minimum project-required irradiance has not been met."
+  "report_date": "2026-10-17"
 }

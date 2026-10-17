@@ -2,6 +2,36 @@
   "schema": "tvant.github.daily.history.v1",
   "items": [
     {
+      "date": "2026-10-11",
+      "pdf": "dailys/MURCH_2026-10-11_Project_All.pdf",
+      "source": "Original TUW Daily PDF; numeric breakdown not yet extracted"
+    },
+    {
+      "date": "2026-10-12",
+      "pdf": "dailys/MURCH_2026-10-12_Project_All.pdf",
+      "source": "Original TUW Daily PDF; numeric breakdown not yet extracted"
+    },
+    {
+      "date": "2026-10-13",
+      "pdf": "dailys/MURCH_2026-10-13_Project_All.pdf",
+      "source": "Original TUW Daily PDF; numeric breakdown not yet extracted"
+    },
+    {
+      "date": "2026-10-14",
+      "pdf": "dailys/MURCH_2026-10-14_Project_All.pdf",
+      "source": "Original TUW Daily PDF; numeric breakdown not yet extracted"
+    },
+    {
+      "date": "2026-10-15",
+      "pdf": "dailys/MURCH_2026-10-15_Project_All.pdf",
+      "source": "Original TUW Daily PDF; numeric breakdown not yet extracted"
+    },
+    {
+      "date": "2026-10-16",
+      "pdf": "dailys/MURCH_2026-10-16_Project_All.pdf",
+      "source": "Original TUW Daily PDF; numeric breakdown not yet extracted"
+    },
+    {
       "date": "2026-10-17",
       "pdf": "dailys/MURCH_2026-10-17_Project_All.pdf",
       "activities": [
@@ -35,31 +65,10 @@
         },
         {
           "id": "vlf",
-          "name": "VLF",
+          "name": "VLF + Battery Bank",
           "complete": 1,
           "scope": 4,
           "unit": "circuits"
-        },
-        {
-          "id": "otdr",
-          "name": "OTDR — Fiber Optic Testing",
-          "complete": 0,
-          "scope": 23,
-          "unit": "INV"
-        },
-        {
-          "id": "scada",
-          "name": "SCADA Communications",
-          "complete": 0,
-          "scope": 23,
-          "unit": "INV"
-        },
-        {
-          "id": "precomm",
-          "name": "Inverter Precommissioning Inspection",
-          "complete": 0,
-          "scope": 23,
-          "unit": "INV"
         }
       ],
       "source": "TVANT SUPERVISOR exported snapshot"
