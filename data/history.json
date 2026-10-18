@@ -123,42 +123,6 @@
         }
       ],
       "source": "TVANT SUPERVISOR exported snapshot"
-    },
-    {
-      "date": "2026-10-16",
-      "pdf": "dailys/MURCH_2026-10-16_Project_All.pdf",
-      "source": "Original TUW Daily PDF; numeric breakdown not yet extracted",
-      "pdf_available": true
-    },
-    {
-      "date": "2026-10-15",
-      "pdf": "dailys/MURCH_2026-10-15_Project_All.pdf",
-      "source": "Original TUW Daily PDF; numeric breakdown not yet extracted",
-      "pdf_available": true
-    },
-    {
-      "date": "2026-10-14",
-      "pdf": "dailys/MURCH_2026-10-14_Project_All.pdf",
-      "source": "Original TUW Daily PDF; numeric breakdown not yet extracted",
-      "pdf_available": true
-    },
-    {
-      "date": "2026-10-13",
-      "pdf": "dailys/MURCH_2026-10-13_Project_All.pdf",
-      "source": "Original TUW Daily PDF; numeric breakdown not yet extracted",
-      "pdf_available": true
-    },
-    {
-      "date": "2026-10-12",
-      "pdf": "dailys/MURCH_2026-10-12_Project_All.pdf",
-      "source": "Original TUW Daily PDF; numeric breakdown not yet extracted",
-      "pdf_available": true
-    },
-    {
-      "date": "2026-10-11",
-      "pdf": "dailys/MURCH_2026-10-11_Project_All.pdf",
-      "source": "Original TUW Daily PDF; numeric breakdown not yet extracted",
-      "pdf_available": true
     }
   ]
 }

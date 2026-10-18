@@ -1,7 +1,7 @@
 {
   "schema": "tvant.client-portal.snapshot.v1",
   "project": "MURCH PV",
-  "published_at": "2026-10-18T10:50:14+00:00",
+  "published_at": "2026-10-18T11:15:32+00:00",
   "counting_basis": "Documentary coverage; not electrical acceptance. Vdc may include legacy unclassified records where no explicit Vdc are present.",
   "activities": [
     {
@@ -229,6 +229,1680 @@
         "name": "INV23",
         "scope": 18,
         "complete": 18
+      }
+    ]
+  },
+  "activity_breakdown": {
+    "circuit": [
+      {
+        "name": "11A",
+        "activities": {
+          "vdc": {
+            "scope": 92,
+            "complete": 91,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 92,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 5,
+            "complete": 5,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 5,
+            "complete": 5,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 5,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "11B",
+        "activities": {
+          "vdc": {
+            "scope": 110,
+            "complete": 70,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 110,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 6,
+            "complete": 2,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 6,
+            "complete": 3,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 6,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "12A",
+        "activities": {
+          "vdc": {
+            "scope": 110,
+            "complete": 109,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 110,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 6,
+            "complete": 6,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 6,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 6,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "12B",
+        "activities": {
+          "vdc": {
+            "scope": 107,
+            "complete": 6,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 107,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 6,
+            "complete": 0,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 6,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 6,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      }
+    ],
+    "zone": [
+      {
+        "name": "A",
+        "activities": {
+          "vdc": {
+            "scope": 54,
+            "complete": 53,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 54,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 3,
+            "complete": 3,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 3,
+            "complete": 3,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 3,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "B",
+        "activities": {
+          "vdc": {
+            "scope": 35,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 35,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 2,
+            "complete": 0,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 2,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 2,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "C",
+        "activities": {
+          "vdc": {
+            "scope": 38,
+            "complete": 38,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 38,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 2,
+            "complete": 2,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 2,
+            "complete": 2,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 2,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "D",
+        "activities": {
+          "vdc": {
+            "scope": 18,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 18,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "E",
+        "activities": {
+          "vdc": {
+            "scope": 128,
+            "complete": 76,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 128,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 7,
+            "complete": 2,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 7,
+            "complete": 3,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 2,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 2,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 2,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 7,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "F",
+        "activities": {
+          "vdc": {
+            "scope": 111,
+            "complete": 75,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 111,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 6,
+            "complete": 4,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 6,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 2,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 2,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 2,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 6,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "G",
+        "activities": {
+          "vdc": {
+            "scope": 35,
+            "complete": 34,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 35,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 2,
+            "complete": 2,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 2,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 2,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      }
+    ],
+    "inv": [
+      {
+        "name": "INV01",
+        "activities": {
+          "vdc": {
+            "scope": 19,
+            "complete": 19,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 19,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV02",
+        "activities": {
+          "vdc": {
+            "scope": 16,
+            "complete": 16,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 16,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV03",
+        "activities": {
+          "vdc": {
+            "scope": 19,
+            "complete": 18,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 19,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV04",
+        "activities": {
+          "vdc": {
+            "scope": 19,
+            "complete": 19,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 19,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV05",
+        "activities": {
+          "vdc": {
+            "scope": 18,
+            "complete": 18,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 18,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV06",
+        "activities": {
+          "vdc": {
+            "scope": 20,
+            "complete": 20,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 20,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV07",
+        "activities": {
+          "vdc": {
+            "scope": 17,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 17,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV08",
+        "activities": {
+          "vdc": {
+            "scope": 18,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 18,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV09",
+        "activities": {
+          "vdc": {
+            "scope": 18,
+            "complete": 18,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 18,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV10",
+        "activities": {
+          "vdc": {
+            "scope": 18,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 18,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV11",
+        "activities": {
+          "vdc": {
+            "scope": 19,
+            "complete": 19,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 19,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV12",
+        "activities": {
+          "vdc": {
+            "scope": 19,
+            "complete": 4,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 19,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV13",
+        "activities": {
+          "vdc": {
+            "scope": 18,
+            "complete": 6,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 18,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV14",
+        "activities": {
+          "vdc": {
+            "scope": 17,
+            "complete": 4,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 17,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV15",
+        "activities": {
+          "vdc": {
+            "scope": 18,
+            "complete": 6,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 18,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV16",
+        "activities": {
+          "vdc": {
+            "scope": 18,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 18,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV17",
+        "activities": {
+          "vdc": {
+            "scope": 18,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 18,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV18",
+        "activities": {
+          "vdc": {
+            "scope": 19,
+            "complete": 19,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 19,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV19",
+        "activities": {
+          "vdc": {
+            "scope": 17,
+            "complete": 17,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 17,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV20",
+        "activities": {
+          "vdc": {
+            "scope": 18,
+            "complete": 17,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 18,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV21",
+        "activities": {
+          "vdc": {
+            "scope": 19,
+            "complete": 19,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 19,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV22",
+        "activities": {
+          "vdc": {
+            "scope": 19,
+            "complete": 19,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 19,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
+      },
+      {
+        "name": "INV23",
+        "activities": {
+          "vdc": {
+            "scope": 18,
+            "complete": 18,
+            "unit": "LBD"
+          },
+          "iv": {
+            "scope": 18,
+            "complete": 0,
+            "unit": "LBD"
+          },
+          "grounding": {
+            "scope": 1,
+            "complete": 1,
+            "unit": "INV"
+          },
+          "continuity": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "BLOCK"
+          },
+          "vlf": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "otdr": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "precomm": {
+            "scope": 1,
+            "complete": 0,
+            "unit": "circuits",
+            "shared_circuit_level": true
+          },
+          "scada": {
+            "scope": 1,
+            "complete": null,
+            "unit": "INV",
+            "publication_status": "NOT_REPORTED"
+          }
+        }
       }
     ]
   },
