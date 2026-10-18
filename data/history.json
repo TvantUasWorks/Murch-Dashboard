@@ -123,6 +123,160 @@
         }
       ],
       "source": "TVANT SUPERVISOR exported snapshot"
+    },
+    {
+      "date": "2026-10-16",
+      "pdf": "dailys/MURCH_2026-10-16_Project_All.pdf",
+      "source": "Original archived PDF, actual test-specific scope",
+      "pdf_available": true,
+      "activities": [
+        {
+          "id": "vdc",
+          "name": "Polarity & Continuity (Vdc)",
+          "complete": 275,
+          "scope": 419,
+          "unit": "LBD"
+        },
+        {
+          "id": "continuity",
+          "name": "Grounding Continuity",
+          "complete": 2,
+          "scope": 23,
+          "unit": "BLOCK"
+        },
+        {
+          "id": "grounding",
+          "name": "Grounding Resistance",
+          "complete": 5,
+          "scope": 23,
+          "unit": "INV"
+        },
+        {
+          "id": "iv",
+          "name": "Iv Curve Test",
+          "complete": 0,
+          "scope": 419,
+          "unit": "LBD"
+        },
+        {
+          "id": "vlf",
+          "name": "VLF",
+          "complete": 1,
+          "scope": 4,
+          "unit": "circuits"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "pdf": "dailys/MURCH_2026-10-15_Project_All.pdf",
+      "source": "Original archived PDF (Vdc/IV only); legacy Grounding uses incorrect LBD denominator, excluded",
+      "pdf_available": true,
+      "activities": [
+        {
+          "id": "vdc",
+          "name": "Polarity & Continuity (Vdc)",
+          "complete": 212,
+          "scope": 419,
+          "unit": "LBD"
+        },
+        {
+          "id": "iv",
+          "name": "IV Curves",
+          "complete": 0,
+          "scope": 419,
+          "unit": "LBD"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "pdf": "dailys/MURCH_2026-10-14_Project_All.pdf",
+      "source": "Original archived PDF (Vdc/IV only); legacy Grounding uses incorrect LBD denominator, excluded",
+      "pdf_available": true,
+      "activities": [
+        {
+          "id": "vdc",
+          "name": "Polarity & Continuity (Vdc)",
+          "complete": 203,
+          "scope": 419,
+          "unit": "LBD"
+        },
+        {
+          "id": "iv",
+          "name": "IV Curves",
+          "complete": 0,
+          "scope": 419,
+          "unit": "LBD"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "pdf": "dailys/MURCH_2026-10-13_Project_All.pdf",
+      "source": "Original archived PDF (Vdc/IV only); legacy Grounding uses incorrect LBD denominator, excluded",
+      "pdf_available": true,
+      "activities": [
+        {
+          "id": "vdc",
+          "name": "Polarity & Continuity (Vdc)",
+          "complete": 181,
+          "scope": 419,
+          "unit": "LBD"
+        },
+        {
+          "id": "iv",
+          "name": "IV Curves",
+          "complete": 0,
+          "scope": 419,
+          "unit": "LBD"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "pdf": "dailys/MURCH_2026-10-12_Project_All.pdf",
+      "source": "Original archived PDF (Vdc/IV only); legacy Grounding uses incorrect LBD denominator, excluded",
+      "pdf_available": true,
+      "activities": [
+        {
+          "id": "vdc",
+          "name": "Polarity & Continuity (Vdc)",
+          "complete": 125,
+          "scope": 419,
+          "unit": "LBD"
+        },
+        {
+          "id": "iv",
+          "name": "IV Curves",
+          "complete": 0,
+          "scope": 419,
+          "unit": "LBD"
+        }
+      ],
+      "source_note": "PDF filename says 2026-10-12, internal header says 2026-10-11. Date retained from filename; values copied without amendment."
+    },
+    {
+      "date": "2026-10-11",
+      "pdf": "dailys/MURCH_2026-10-11_Project_All.pdf",
+      "source": "Original archived PDF (Vdc/IV only); legacy Grounding uses incorrect LBD denominator, excluded",
+      "pdf_available": true,
+      "activities": [
+        {
+          "id": "vdc",
+          "name": "Polarity & Continuity (Vdc)",
+          "complete": 74,
+          "scope": 419,
+          "unit": "LBD"
+        },
+        {
+          "id": "iv",
+          "name": "IV Curves",
+          "complete": 0,
+          "scope": 419,
+          "unit": "LBD"
+        }
+      ]
     }
   ]
 }
