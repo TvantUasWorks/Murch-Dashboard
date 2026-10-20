@@ -53,6 +53,13 @@
           "complete": 1,
           "scope": 4,
           "unit": "circuits"
+        },
+        {
+          "id": "scada",
+          "name": "SCADA Communications",
+          "complete": 5,
+          "scope": 23,
+          "unit": "INV"
         }
       ],
       "source": "TVANT SUPERVISOR exported snapshot"

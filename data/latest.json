@@ -1,7 +1,7 @@
 {
   "schema": "tvant.client-portal.snapshot.v1",
   "project": "MURCH PV",
-  "published_at": "2026-10-20T08:41:39+00:00",
+  "published_at": "2026-10-20T08:52:54+00:00",
   "counting_basis": "Documentary coverage; not electrical acceptance. Vdc may include legacy unclassified records where no explicit Vdc are present.",
   "activities": [
     {
@@ -52,6 +52,13 @@
       "complete": 1,
       "scope": 4,
       "unit": "circuits"
+    },
+    {
+      "id": "scada",
+      "name": "SCADA Communications",
+      "complete": 5,
+      "scope": 23,
+      "unit": "INV"
     }
   ],
   "breakdown": {
@@ -277,9 +284,8 @@
           },
           "scada": {
             "scope": 5,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 5,
+            "unit": "INV"
           }
         }
       },
@@ -326,9 +332,8 @@
           },
           "scada": {
             "scope": 6,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -375,9 +380,8 @@
           },
           "scada": {
             "scope": 6,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -424,9 +428,8 @@
           },
           "scada": {
             "scope": 6,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       }
@@ -475,9 +478,8 @@
           },
           "scada": {
             "scope": 3,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 3,
+            "unit": "INV"
           }
         }
       },
@@ -524,9 +526,8 @@
           },
           "scada": {
             "scope": 2,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -573,9 +574,8 @@
           },
           "scada": {
             "scope": 2,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 2,
+            "unit": "INV"
           }
         }
       },
@@ -622,9 +622,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -671,9 +670,8 @@
           },
           "scada": {
             "scope": 7,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -720,9 +718,8 @@
           },
           "scada": {
             "scope": 6,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -769,9 +766,8 @@
           },
           "scada": {
             "scope": 2,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       }
@@ -820,9 +816,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 1,
+            "unit": "INV"
           }
         }
       },
@@ -869,9 +864,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 1,
+            "unit": "INV"
           }
         }
       },
@@ -918,9 +912,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 1,
+            "unit": "INV"
           }
         }
       },
@@ -967,9 +960,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -1016,9 +1008,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 1,
+            "unit": "INV"
           }
         }
       },
@@ -1065,9 +1056,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 1,
+            "unit": "INV"
           }
         }
       },
@@ -1114,9 +1104,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -1163,9 +1152,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -1212,9 +1200,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -1261,9 +1248,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -1310,9 +1296,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -1359,9 +1344,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -1408,9 +1392,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -1457,9 +1440,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -1506,9 +1488,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -1555,9 +1536,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -1604,9 +1584,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -1653,9 +1632,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -1702,9 +1680,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -1751,9 +1728,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -1800,9 +1776,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -1849,9 +1824,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       },
@@ -1898,9 +1872,8 @@
           },
           "scada": {
             "scope": 1,
-            "complete": null,
-            "unit": "INV",
-            "publication_status": "NOT_REPORTED"
+            "complete": 0,
+            "unit": "INV"
           }
         }
       }
