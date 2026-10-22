@@ -126,14 +126,54 @@ async function loadPublishedDaily(){
   document.querySelectorAll('.kpi b')[2].textContent=activities.length+' types';
   document.querySelectorAll('.kpi b')[3].textContent='Published';
   el('historyList').innerHTML=items.map((d,i)=>{const known=Array.isArray(d.activities)&&d.activities.length;const metrics=known?`Vdc ${(metric(d,'vdc')?.toFixed(1)??'—')}% · Grounding ${(metric(d,'grounding')?.toFixed(1)??'—')}% · VLF ${(metric(d,'vlf')?.toFixed(1)??'—')}%`:'Progress: see original Daily PDF';return `<div class="history-entry"><div><b>${escapeHtml(fmtDate(d.date))} · Daily Report</b><small>${metrics}</small></div><span class="tag">${i===0?'Current':'Archived'}</span>${d.pdf_available===false?`<span class="tag">PDF not uploaded</span>`:`<a class="pdf-link" href="${d.pdf}" target="_blank" rel="noopener">View PDF</a>`}</div>`}).join('');
-  if(items.filter(h=>Array.isArray(h.activities)&&h.activities.length).length>=2){
-   const data=[...items].filter(h=>Array.isArray(h.activities)&&h.activities.length).reverse().map(h=>({label:fmtDate(h.date),vdc:metric(h,'vdc'),ground:metric(h,'grounding'),vlf:metric(h,'vlf')}));
-   const svg=el('evolutionChart'),w=760,h=290,l=45,r=16,t=18,b=42,iw=w-l-r,ih=h-t-b,y=v=>t+ih*(1-v/100),x=i=>l+iw*i/(data.length-1);
-   let out='';for(let v=0;v<=100;v+=25)out+=`<line x1="${l}" y1="${y(v)}" x2="${w-r}" y2="${y(v)}" stroke="#385166" stroke-dasharray="4 5"/><text x="${l-9}" y="${y(v)+4}" text-anchor="end" font-size="12" fill="#b3c5d2">${v}%</text>`;
-   data.forEach((d,i)=>out+=`<text x="${x(i)}" y="${h-13}" text-anchor="middle" font-size="11" fill="#b3c5d2">${escapeHtml(d.label)}</text>`);
-   for(const [key,c] of [['vdc','#4b98cf'],['ground','#36ad81'],['vlf','#e3a23b']]){out+=data.filter(d=>d[key]!==null).length>=2?`<polyline fill="none" stroke="${c}" stroke-width="3" points="${data.map((d,i)=>d[key]===null?null:x(i)+','+y(d[key])).filter(Boolean).join(' ')}"/>`:''}
-   svg.innerHTML=out;
+  // Dynamic historical trends: separate actual records from missing historical data.
+  const trendDefs=[
+    ['vdc','Vdc','#4b98cf'],
+    ['grounding','Grounding Resistance','#36ad81'],
+    ['continuity','Grounding Continuity','#a78bfa'],
+    ['iv','IV Curves (measured)','#f47272'],
+    ['vlf','VLF','#e3a23b'],
+    ['otdr','OTDR','#22d3ee'],
+    ['precomm','Inverter Precommissioning','#e879f9'],
+    ['scada','SCADA & Communications','#f59e71']
+  ];
+  const historyData=[...items].reverse().map(entry=>{
+    const values={};
+    for(const [id] of trendDefs){
+      const activity=(entry.activities||[]).find(a=>a.id===id);
+      const count=id==='iv'?activity?.measured:activity?.complete;
+      values[id]=activity&&Number.isFinite(count)&&Number.isFinite(activity.scope)&&activity.scope>0
+        ? Math.max(0,Math.min(100,100*count/activity.scope)):null;
+    }
+    return {label:fmtDate(entry.date),values};
+  });
+  const legend=el('evolutionChart').parentElement.nextElementSibling;
+  const keepChecked=new Set(trendDefs.map(d=>d[0]));
+  if(legend){
+    legend.innerHTML=trendDefs.map(([id,name,c])=>`<label style="display:inline-flex;gap:5px;align-items:center;cursor:pointer;white-space:nowrap"><input type="checkbox" data-trend="${id}" checked style="accent-color:${c}"><span style="display:inline-block;width:9px;height:9px;border-radius:3px;background:${c}"></span>${escapeHtml(name)}</label>`).join('');
   }
+  function drawHistoricalTrends(){
+    const svg=el('evolutionChart'),w=760,h=290,l=45,r=16,t=18,b=42,iw=w-l-r,ih=h-t-b;
+    const y=v=>t+ih*(1-v/100),x=i=>l+iw*(historyData.length===1?0.5:i/(historyData.length-1||1));
+    let out='';
+    for(let v=0;v<=100;v+=25)out+=`<line x1="${l}" y1="${y(v)}" x2="${w-r}" y2="${y(v)}" stroke="#385166" stroke-dasharray="4 5"/><text x="${l-9}" y="${y(v)+4}" text-anchor="end" font-size="12" fill="#b3c5d2">${v}%</text>`;
+    historyData.forEach((d,i)=>out+=`<text x="${x(i)}" y="${h-13}" text-anchor="middle" font-size="10" fill="#b3c5d2">${escapeHtml(d.label)}</text>`);
+    for(const [id,name,c] of trendDefs){
+      if(legend&&!legend.querySelector('[data-trend="'+id+'"]')?.checked)continue;
+      let segment=[];
+      const flush=()=>{if(segment.length>1)out+=`<polyline fill="none" stroke="${c}" stroke-width="2.6" stroke-linejoin="round" points="${segment.join(' ')}"/>`;segment=[];};
+      historyData.forEach((d,i)=>{
+        const v=d.values[id];if(v===null){flush();return;}
+        segment.push(`${x(i)},${y(v)}`);
+        out+=`<circle cx="${x(i)}" cy="${y(v)}" r="4" fill="${c}"><title>${escapeHtml(name)} — ${escapeHtml(d.label)}: ${v.toFixed(2)}%</title></circle>`;
+      });
+      flush();
+    }
+    if(!historyData.some(d=>Object.values(d.values).some(v=>v!==null)))out+=`<text x="${w/2}" y="${h/2}" text-anchor="middle" fill="#b3c5d2">No historical measurements available</text>`;
+    svg.innerHTML=out;
+  }
+  if(legend)legend.addEventListener('change',drawHistoricalTrends);
+  drawHistoricalTrends();
   el('summaryTable').dataset.today=latest.report_date||items[0]?.date||'';
   el('scope').value='project';fillScope();
   el('syncStatus').textContent='Daily published · '+fmtDate(latest.report_date||items[0]?.date||'2026-10-17');
