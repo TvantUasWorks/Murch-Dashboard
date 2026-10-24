@@ -1,13 +1,13 @@
 {
   "schema": "tvant.client-portal.snapshot.v1",
   "project": "MURCH PV",
-  "published_at": "2026-10-23T14:08:59+00:00",
+  "published_at": "2026-10-24T09:33:35+00:00",
   "counting_basis": "Documentary coverage; not electrical acceptance. Vdc may include legacy unclassified records where no explicit Vdc are present.",
   "activities": [
     {
       "id": "vdc",
       "name": "Polarity & Continuity (Vdc)",
-      "complete": 301,
+      "complete": 313,
       "scope": 419,
       "unit": "LBD"
     },
@@ -28,12 +28,12 @@
     {
       "id": "iv",
       "name": "IV Curve Test — Sampling",
-      "complete": 33,
-      "measured": 33,
-      "measurements": 33,
+      "complete": 49,
+      "measured": 49,
+      "measurements": 67,
       "full_lbd_measured": 1,
       "full_lbd_scope": 23,
-      "sample_lbd_measured": 18,
+      "sample_lbd_measured": 33,
       "sample_lbd_scope": 396,
       "unmapped": 0,
       "scope": 752,
@@ -78,7 +78,7 @@
       {
         "name": "11B",
         "scope": 110,
-        "complete": 77
+        "complete": 89
       },
       {
         "name": "12A",
@@ -115,7 +115,7 @@
       {
         "name": "E",
         "scope": 128,
-        "complete": 83
+        "complete": 95
       },
       {
         "name": "F",
@@ -187,12 +187,12 @@
       {
         "name": "INV12",
         "scope": 19,
-        "complete": 11
+        "complete": 18
       },
       {
         "name": "INV13",
         "scope": 18,
-        "complete": 6
+        "complete": 11
       },
       {
         "name": "INV14",
@@ -260,7 +260,7 @@
             "scope": 92,
             "complete": 0,
             "unit": "LBD",
-            "measured": 19
+            "measured": 35
           },
           "grounding": {
             "scope": 5,
@@ -302,7 +302,7 @@
         "activities": {
           "vdc": {
             "scope": 110,
-            "complete": 77,
+            "complete": 89,
             "unit": "LBD"
           },
           "iv": {
@@ -458,7 +458,7 @@
             "scope": 54,
             "complete": 0,
             "unit": "LBD",
-            "measured": 19
+            "measured": 35
           },
           "grounding": {
             "scope": 3,
@@ -647,7 +647,7 @@
         "activities": {
           "vdc": {
             "scope": 128,
-            "complete": 83,
+            "complete": 95,
             "unit": "LBD"
           },
           "iv": {
@@ -852,7 +852,7 @@
             "scope": 16,
             "complete": 0,
             "unit": "LBD",
-            "measured": 0
+            "measured": 16
           },
           "grounding": {
             "scope": 1,
@@ -1335,7 +1335,7 @@
         "activities": {
           "vdc": {
             "scope": 19,
-            "complete": 11,
+            "complete": 18,
             "unit": "LBD"
           },
           "iv": {
@@ -1384,7 +1384,7 @@
         "activities": {
           "vdc": {
             "scope": 18,
-            "complete": 6,
+            "complete": 11,
             "unit": "LBD"
           },
           "iv": {
@@ -1921,5 +1921,5 @@
     ]
   },
   "visibility": "Aggregated client publication only; no raw measurements, names, attachments or original results.",
-  "report_date": "2026-10-23"
+  "report_date": "2026-10-24"
 }
