@@ -2,6 +2,76 @@
   "schema": "tvant.github.daily.history.v1",
   "items": [
     {
+      "date": "2026-10-25",
+      "pdf": "dailys/MURCH_2026-10-25_Project_All.pdf",
+      "activities": [
+        {
+          "id": "vdc",
+          "name": "Polarity & Continuity (Vdc)",
+          "complete": 329,
+          "scope": 419,
+          "unit": "LBD"
+        },
+        {
+          "id": "grounding",
+          "name": "Grounding Resistance",
+          "complete": 18,
+          "scope": 23,
+          "unit": "INV"
+        },
+        {
+          "id": "continuity",
+          "name": "Grounding Continuity",
+          "complete": 18,
+          "scope": 23,
+          "unit": "BLOCK"
+        },
+        {
+          "id": "iv",
+          "name": "IV Curve Test — Sampling",
+          "complete": 49,
+          "measured": 49,
+          "measurements": 67,
+          "full_lbd_measured": 1,
+          "full_lbd_scope": 23,
+          "sample_lbd_measured": 33,
+          "sample_lbd_scope": 396,
+          "unmapped": 0,
+          "scope": 752,
+          "unit": "STR samples"
+        },
+        {
+          "id": "vlf",
+          "name": "VLF",
+          "complete": 1,
+          "scope": 4,
+          "unit": "circuits"
+        },
+        {
+          "id": "otdr",
+          "name": "OTDR — Fiber Optic Testing",
+          "complete": 1,
+          "scope": 4,
+          "unit": "circuits"
+        },
+        {
+          "id": "precomm",
+          "name": "Inverter Precommissioning Inspection",
+          "complete": 2,
+          "scope": 4,
+          "unit": "circuits"
+        },
+        {
+          "id": "scada",
+          "name": "SCADA Communications",
+          "complete": 5,
+          "scope": 23,
+          "unit": "INV"
+        }
+      ],
+      "source": "TVANT SUPERVISOR exported snapshot"
+    },
+    {
       "date": "2026-10-24",
       "pdf": "dailys/MURCH_2026-10-24_Project_All.pdf",
       "activities": [

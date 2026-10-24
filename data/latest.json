@@ -1,13 +1,13 @@
 {
   "schema": "tvant.client-portal.snapshot.v1",
   "project": "MURCH PV",
-  "published_at": "2026-10-24T09:33:35+00:00",
+  "published_at": "2026-10-24T22:25:19+00:00",
   "counting_basis": "Documentary coverage; not electrical acceptance. Vdc may include legacy unclassified records where no explicit Vdc are present.",
   "activities": [
     {
       "id": "vdc",
       "name": "Polarity & Continuity (Vdc)",
-      "complete": 313,
+      "complete": 329,
       "scope": 419,
       "unit": "LBD"
     },
@@ -56,7 +56,7 @@
     {
       "id": "precomm",
       "name": "Inverter Precommissioning Inspection",
-      "complete": 1,
+      "complete": 2,
       "scope": 4,
       "unit": "circuits"
     },
@@ -78,7 +78,7 @@
       {
         "name": "11B",
         "scope": 110,
-        "complete": 89
+        "complete": 102
       },
       {
         "name": "12A",
@@ -88,7 +88,7 @@
       {
         "name": "12B",
         "scope": 107,
-        "complete": 23
+        "complete": 26
       }
     ],
     "zone": [
@@ -115,7 +115,7 @@
       {
         "name": "E",
         "scope": 128,
-        "complete": 95
+        "complete": 111
       },
       {
         "name": "F",
@@ -187,22 +187,22 @@
       {
         "name": "INV12",
         "scope": 19,
-        "complete": 18
+        "complete": 19
       },
       {
         "name": "INV13",
         "scope": 18,
-        "complete": 11
+        "complete": 18
       },
       {
         "name": "INV14",
         "scope": 17,
-        "complete": 4
+        "complete": 9
       },
       {
         "name": "INV15",
         "scope": 18,
-        "complete": 6
+        "complete": 9
       },
       {
         "name": "INV16",
@@ -302,7 +302,7 @@
         "activities": {
           "vdc": {
             "scope": 110,
-            "complete": 89,
+            "complete": 102,
             "unit": "LBD"
           },
           "iv": {
@@ -335,7 +335,7 @@
           },
           "precomm": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -400,7 +400,7 @@
         "activities": {
           "vdc": {
             "scope": 107,
-            "complete": 23,
+            "complete": 26,
             "unit": "LBD"
           },
           "iv": {
@@ -647,7 +647,7 @@
         "activities": {
           "vdc": {
             "scope": 128,
-            "complete": 95,
+            "complete": 111,
             "unit": "LBD"
           },
           "iv": {
@@ -680,7 +680,7 @@
           },
           "precomm": {
             "scope": 2,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -976,7 +976,7 @@
           },
           "precomm": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -1221,7 +1221,7 @@
           },
           "precomm": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -1319,7 +1319,7 @@
           },
           "precomm": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -1335,7 +1335,7 @@
         "activities": {
           "vdc": {
             "scope": 19,
-            "complete": 18,
+            "complete": 19,
             "unit": "LBD"
           },
           "iv": {
@@ -1368,7 +1368,7 @@
           },
           "precomm": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -1384,7 +1384,7 @@
         "activities": {
           "vdc": {
             "scope": 18,
-            "complete": 11,
+            "complete": 18,
             "unit": "LBD"
           },
           "iv": {
@@ -1417,7 +1417,7 @@
           },
           "precomm": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -1433,7 +1433,7 @@
         "activities": {
           "vdc": {
             "scope": 17,
-            "complete": 4,
+            "complete": 9,
             "unit": "LBD"
           },
           "iv": {
@@ -1466,7 +1466,7 @@
           },
           "precomm": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -1482,7 +1482,7 @@
         "activities": {
           "vdc": {
             "scope": 18,
-            "complete": 6,
+            "complete": 9,
             "unit": "LBD"
           },
           "iv": {
@@ -1921,5 +1921,5 @@
     ]
   },
   "visibility": "Aggregated client publication only; no raw measurements, names, attachments or original results.",
-  "report_date": "2026-10-24"
+  "report_date": "2026-10-25"
 }
