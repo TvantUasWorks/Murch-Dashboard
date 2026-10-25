@@ -1,13 +1,13 @@
 {
   "schema": "tvant.client-portal.snapshot.v1",
   "project": "MURCH PV",
-  "published_at": "2026-10-25T15:20:40+00:00",
+  "published_at": "2026-10-25T22:12:34+00:00",
   "counting_basis": "Documentary coverage; not electrical acceptance. Vdc may include legacy unclassified records where no explicit Vdc are present.",
   "activities": [
     {
       "id": "vdc",
       "name": "Polarity & Continuity (Vdc)",
-      "complete": 329,
+      "complete": 339,
       "scope": 419,
       "unit": "LBD"
     },
@@ -78,7 +78,7 @@
       {
         "name": "11B",
         "scope": 110,
-        "complete": 102
+        "complete": 108
       },
       {
         "name": "12A",
@@ -88,7 +88,7 @@
       {
         "name": "12B",
         "scope": 107,
-        "complete": 26
+        "complete": 30
       }
     ],
     "zone": [
@@ -115,7 +115,7 @@
       {
         "name": "E",
         "scope": 128,
-        "complete": 111
+        "complete": 121
       },
       {
         "name": "F",
@@ -197,12 +197,12 @@
       {
         "name": "INV14",
         "scope": 17,
-        "complete": 9
+        "complete": 15
       },
       {
         "name": "INV15",
         "scope": 18,
-        "complete": 9
+        "complete": 13
       },
       {
         "name": "INV16",
@@ -302,7 +302,7 @@
         "activities": {
           "vdc": {
             "scope": 110,
-            "complete": 102,
+            "complete": 108,
             "unit": "LBD"
           },
           "iv": {
@@ -400,7 +400,7 @@
         "activities": {
           "vdc": {
             "scope": 107,
-            "complete": 26,
+            "complete": 30,
             "unit": "LBD"
           },
           "iv": {
@@ -647,7 +647,7 @@
         "activities": {
           "vdc": {
             "scope": 128,
-            "complete": 111,
+            "complete": 121,
             "unit": "LBD"
           },
           "iv": {
@@ -1433,7 +1433,7 @@
         "activities": {
           "vdc": {
             "scope": 17,
-            "complete": 9,
+            "complete": 15,
             "unit": "LBD"
           },
           "iv": {
@@ -1482,7 +1482,7 @@
         "activities": {
           "vdc": {
             "scope": 18,
-            "complete": 9,
+            "complete": 13,
             "unit": "LBD"
           },
           "iv": {
