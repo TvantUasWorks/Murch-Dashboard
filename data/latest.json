@@ -1,7 +1,7 @@
 {
   "schema": "tvant.client-portal.snapshot.v1",
   "project": "MURCH PV",
-  "published_at": "2026-10-24T22:25:19+00:00",
+  "published_at": "2026-10-25T15:20:40+00:00",
   "counting_basis": "Documentary coverage; not electrical acceptance. Vdc may include legacy unclassified records where no explicit Vdc are present.",
   "activities": [
     {
@@ -28,12 +28,12 @@
     {
       "id": "iv",
       "name": "IV Curve Test — Sampling",
-      "complete": 49,
-      "measured": 49,
-      "measurements": 67,
+      "complete": 67,
+      "measured": 67,
+      "measurements": 93,
       "full_lbd_measured": 1,
       "full_lbd_scope": 23,
-      "sample_lbd_measured": 33,
+      "sample_lbd_measured": 50,
       "sample_lbd_scope": 396,
       "unmapped": 0,
       "scope": 752,
@@ -260,7 +260,7 @@
             "scope": 92,
             "complete": 0,
             "unit": "LBD",
-            "measured": 35
+            "measured": 53
           },
           "grounding": {
             "scope": 5,
@@ -458,7 +458,7 @@
             "scope": 54,
             "complete": 0,
             "unit": "LBD",
-            "measured": 35
+            "measured": 53
           },
           "grounding": {
             "scope": 3,
@@ -901,7 +901,7 @@
             "scope": 19,
             "complete": 0,
             "unit": "LBD",
-            "measured": 0
+            "measured": 18
           },
           "grounding": {
             "scope": 1,
