@@ -1,7 +1,7 @@
 {
   "schema": "tvant.client-portal.snapshot.v1",
   "project": "MURCH PV",
-  "published_at": "2026-10-26T11:03:52+00:00",
+  "published_at": "2026-10-26T14:23:01+00:00",
   "counting_basis": "Documentary coverage; not electrical acceptance. Vdc may include legacy unclassified records where no explicit Vdc are present.",
   "activities": [
     {
@@ -28,19 +28,19 @@
     {
       "id": "iv",
       "name": "IV Curve Test — Sampling",
-      "complete": 91,
-      "measured": 91,
-      "measurements": 91,
+      "complete": 131,
+      "measured": 131,
+      "measurements": 131,
       "source": "CSV",
       "review_status": {
-        "Validated": 91,
+        "Validated": 131,
         "Rejected": 0,
         "Requires Review": 0,
         "Pending Review": 0
       },
       "full_lbd_measured": 1,
       "full_lbd_scope": 23,
-      "sample_lbd_measured": 49,
+      "sample_lbd_measured": 67,
       "sample_lbd_scope": 396,
       "unmapped": 0,
       "scope": 752,
@@ -267,7 +267,7 @@
             "scope": 92,
             "complete": 0,
             "unit": "LBD",
-            "measured": 52
+            "measured": 71
           },
           "grounding": {
             "scope": 5,
@@ -563,7 +563,7 @@
             "scope": 38,
             "complete": 0,
             "unit": "LBD",
-            "measured": 0
+            "measured": 19
           },
           "grounding": {
             "scope": 2,
@@ -1006,7 +1006,7 @@
             "scope": 18,
             "complete": 0,
             "unit": "LBD",
-            "measured": 0
+            "measured": 18
           },
           "grounding": {
             "scope": 1,
@@ -1055,7 +1055,7 @@
             "scope": 20,
             "complete": 0,
             "unit": "LBD",
-            "measured": 0
+            "measured": 1
           },
           "grounding": {
             "scope": 1,
@@ -1928,5 +1928,5 @@
     ]
   },
   "visibility": "Aggregated client publication only; no raw measurements, names, attachments or original results.",
-  "report_date": "2026-10-25"
+  "report_date": "2026-10-26"
 }
