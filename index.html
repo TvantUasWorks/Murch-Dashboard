@@ -53,7 +53,7 @@ function render(){
   const result=groupDetail.activities[ids[label]];
   return [label,result?.complete??null,result?.scope??null,result?.unit||unit];
  }):selectedGroup?[['Polarity & Continuity (Vdc)',selectedGroup.complete,selectedGroup.scope,'LBD']]:[]):useCircuit&&circ?[['Polarity & Continuity (Vdc)',circ[1],circ[2],'LBD']]:current==='project'?activities:[];
- el('scopeNote').textContent=current==='project'?'* Temporary reported project-level figures for VLF (50%), IV Curves (38%) and SCADA Communications (49%). Pending validation in TUW SUPERVISOR; source test records and circuit breakdowns unchanged.':useCircuit?(selected==='11A'?'Circuit 11A: original published test data retained; no temporary project-level overrides.':'VLF 50%, IV Curves 38% and SCADA 49% are provisional PROJECT-WIDE reference figures, shown for context only; they are NOT calculated results for '+selected+'. Other test values remain circuit-specific.'):'Test-specific breakdown is shown when included in the current TUW publication.';
+ el('scopeNote').textContent='';
  const iv=ivRecord(),measured=measuredCount();
  const isIV=name=>name==='IV Curves';
  const ivExtra=(total,done)=>{
