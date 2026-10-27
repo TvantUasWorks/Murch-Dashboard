@@ -1,13 +1,13 @@
 {
   "schema": "tvant.client-portal.snapshot.v1",
   "project": "MURCH PV",
-  "published_at": "2026-10-26T14:23:01+00:00",
+  "published_at": "2026-10-27T15:58:43+00:00",
   "counting_basis": "Documentary coverage; not electrical acceptance. Vdc may include legacy unclassified records where no explicit Vdc are present.",
   "activities": [
     {
       "id": "vdc",
       "name": "Polarity & Continuity (Vdc)",
-      "complete": 341,
+      "complete": 359,
       "scope": 419,
       "unit": "LBD"
     },
@@ -28,19 +28,19 @@
     {
       "id": "iv",
       "name": "IV Curve Test — Sampling",
-      "complete": 131,
-      "measured": 131,
-      "measurements": 131,
+      "complete": 148,
+      "measured": 148,
+      "measurements": 148,
       "source": "CSV",
       "review_status": {
         "Validated": 131,
         "Rejected": 0,
         "Requires Review": 0,
-        "Pending Review": 0
+        "Pending Review": 17
       },
       "full_lbd_measured": 1,
       "full_lbd_scope": 23,
-      "sample_lbd_measured": 67,
+      "sample_lbd_measured": 83,
       "sample_lbd_scope": 396,
       "unmapped": 0,
       "scope": 752,
@@ -56,14 +56,14 @@
     {
       "id": "otdr",
       "name": "OTDR — Fiber Optic Testing",
-      "complete": 1,
+      "complete": 2,
       "scope": 4,
       "unit": "circuits"
     },
     {
       "id": "precomm",
       "name": "Inverter Precommissioning Inspection",
-      "complete": 2,
+      "complete": 3,
       "scope": 4,
       "unit": "circuits"
     },
@@ -95,7 +95,7 @@
       {
         "name": "12B",
         "scope": 107,
-        "complete": 30
+        "complete": 48
       }
     ],
     "zone": [
@@ -107,7 +107,7 @@
       {
         "name": "B",
         "scope": 35,
-        "complete": 17
+        "complete": 35
       },
       {
         "name": "C",
@@ -174,7 +174,7 @@
       {
         "name": "INV08",
         "scope": 18,
-        "complete": 0
+        "complete": 18
       },
       {
         "name": "INV09",
@@ -267,7 +267,7 @@
             "scope": 92,
             "complete": 0,
             "unit": "LBD",
-            "measured": 71
+            "measured": 88
           },
           "grounding": {
             "scope": 5,
@@ -336,7 +336,7 @@
           },
           "otdr": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -407,7 +407,7 @@
         "activities": {
           "vdc": {
             "scope": 107,
-            "complete": 30,
+            "complete": 48,
             "unit": "LBD"
           },
           "iv": {
@@ -440,7 +440,7 @@
           },
           "precomm": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -507,7 +507,7 @@
         "activities": {
           "vdc": {
             "scope": 35,
-            "complete": 17,
+            "complete": 35,
             "unit": "LBD"
           },
           "iv": {
@@ -540,7 +540,7 @@
           },
           "precomm": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -563,7 +563,7 @@
             "scope": 38,
             "complete": 0,
             "unit": "LBD",
-            "measured": 19
+            "measured": 36
           },
           "grounding": {
             "scope": 2,
@@ -638,7 +638,7 @@
           },
           "precomm": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -681,13 +681,13 @@
           },
           "otdr": {
             "scope": 2,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
           "precomm": {
             "scope": 2,
-            "complete": 1,
+            "complete": 2,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -736,7 +736,7 @@
           },
           "precomm": {
             "scope": 2,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -977,7 +977,7 @@
           },
           "otdr": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -1055,7 +1055,7 @@
             "scope": 20,
             "complete": 0,
             "unit": "LBD",
-            "measured": 1
+            "measured": 18
           },
           "grounding": {
             "scope": 1,
@@ -1130,7 +1130,7 @@
           },
           "precomm": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -1146,7 +1146,7 @@
         "activities": {
           "vdc": {
             "scope": 18,
-            "complete": 0,
+            "complete": 18,
             "unit": "LBD"
           },
           "iv": {
@@ -1179,7 +1179,7 @@
           },
           "precomm": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -1222,7 +1222,7 @@
           },
           "otdr": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -1277,7 +1277,7 @@
           },
           "precomm": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -1320,7 +1320,7 @@
           },
           "otdr": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -1369,7 +1369,7 @@
           },
           "otdr": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -1418,7 +1418,7 @@
           },
           "otdr": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -1467,7 +1467,7 @@
           },
           "otdr": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -1522,7 +1522,7 @@
           },
           "precomm": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -1571,7 +1571,7 @@
           },
           "precomm": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -1620,7 +1620,7 @@
           },
           "precomm": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "circuits",
             "shared_circuit_level": true
           },
@@ -1928,5 +1928,5 @@
     ]
   },
   "visibility": "Aggregated client publication only; no raw measurements, names, attachments or original results.",
-  "report_date": "2026-10-26"
+  "report_date": "2026-10-27"
 }
