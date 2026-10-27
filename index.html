@@ -53,7 +53,7 @@ function render(){
   const result=groupDetail.activities[ids[label]];
   return [label,result?.complete??null,result?.scope??null,result?.unit||unit];
  }):selectedGroup?[['Polarity & Continuity (Vdc)',selectedGroup.complete,selectedGroup.scope,'LBD']]:[]):useCircuit&&circ?[['Polarity & Continuity (Vdc)',circ[1],circ[2],'LBD']]:current==='project'?activities:[];
- el('scopeNote').textContent=current==='project'?'* Temporary reported project-level figures for VLF (50%), IV Curves (38%) and SCADA Communications (49%). Pending validation in TUW SUPERVISOR; source test records and circuit breakdowns unchanged.':useCircuit?'VLF 50%, IV Curves 38% and SCADA 49% are provisional PROJECT-WIDE reference figures, shown for context only; they are NOT calculated results for '+selected+'. Other test values remain circuit-specific.':'Test-specific breakdown is shown when included in the current TUW publication.';
+ el('scopeNote').textContent=current==='project'?'* Temporary reported project-level figures for VLF (50%), IV Curves (38%) and SCADA Communications (49%). Pending validation in TUW SUPERVISOR; source test records and circuit breakdowns unchanged.':useCircuit?(selected==='11A'?'Circuit 11A: original published test data retained; no temporary project-level overrides.':'VLF 50%, IV Curves 38% and SCADA 49% are provisional PROJECT-WIDE reference figures, shown for context only; they are NOT calculated results for '+selected+'. Other test values remain circuit-specific.'):'Test-specific breakdown is shown when included in the current TUW publication.';
  const iv=ivRecord(),measured=measuredCount();
  const isIV=name=>name==='IV Curves';
  const ivExtra=(total,done)=>{
@@ -64,25 +64,25 @@ function render(){
  el('cards').innerHTML=scoped.length?scoped.map(([name,done,total,unit])=>{
   const missing=done===null||total===null||total===0;
   const showIV=isIV(name)&&measured!==null&&total>0;
-  const provisional=(current==='project'||(current==='circuit'&&!!selected))?provisionalProjectProgress[name]:undefined;
+  const provisional=(current==='project'||(current==='circuit'&&!!selected&&selected!=='11A'))?provisionalProjectProgress[name]:undefined;
   const pct=provisional??(showIV?100*measured/total:!missing?100*done/total:0);
   const heading=provisional!==undefined?pct.toFixed(0)+'%':showIV?pct.toFixed(2)+'%':missing?'Not reported':pct.toFixed(1)+'%';
   const description=provisional!==undefined?(current==='circuit'?'Project-wide provisional reference · not circuit-specific':'Temporary reported progress · awaiting validation'):showIV?'Measurement coverage':missing?'Awaiting next TUW publication':`${done} / ${total} ${unit} · ${total-done} pending`;
   return `<div class="card"><div class="name">${escapeHtml(name)}</div><div class="num">${heading}</div><div class="track"><div class="fill" style="width:${pct}%;background:${color(pct)}"></div></div><div class="details">${description}</div>${isIV(name)&&provisional===undefined?ivExtra(total,done):''}</div>`;
  }).join(''):'<div class="placeholder">No activity breakdown has been published for this selection.</div>';
- el('pending').innerHTML=scoped.map(([n,d,t,u])=>{if((current==='project'||(current==='circuit'&&selected)&&provisionalProjectProgress[n]!==undefined))return `<tr><td>${escapeHtml(n)}</td><td>Pending validation</td><td>—</td></tr>`;
+ el('pending').innerHTML=scoped.map(([n,d,t,u])=>{if((current==='project'||(current==='circuit'&&selected&&selected!=='11A'))&&provisionalProjectProgress[n]!==undefined)return `<tr><td>${escapeHtml(n)}</td><td>Pending validation</td><td>—</td></tr>`;
   let note='';
   if(isIV(n)&&measured!==null&&t>0)note=`<div class="iv-note">${measured} LBD measured · ${d} complete</div>`;
   return `<tr><td>${escapeHtml(n)}</td><td>${d===null||t===null||t===0?'Not reported':t-d}${note}</td><td>${u}</td></tr>`;
  }).join('')||'<tr><td colspan="3">Pending data synchronization</td></tr>';
- el('completedTable').innerHTML=scoped.map(([n,d,t,u])=>{const provisional=(current==='project'||(current==='circuit'&&selected))?provisionalProjectProgress[n]:undefined;return `<tr><td>${escapeHtml(n)}</td><td>${provisional!==undefined?'Pending validation':d===null||t===null||t===0?'Not reported':d}</td><td>${provisional!==undefined?'—':t===null||t===0?'—':t+' '+u}</td><td>${provisional!==undefined?provisional+'%*':d===null||!t?'—':(100*d/t).toFixed(1)+'%'}</td></tr>`}).join('')||'<tr><td colspan="4">No records</td></tr>';
+ el('completedTable').innerHTML=scoped.map(([n,d,t,u])=>{const provisional=(current==='project'||(current==='circuit'&&selected&&selected!=='11A'))?provisionalProjectProgress[n]:undefined;return `<tr><td>${escapeHtml(n)}</td><td>${provisional!==undefined?'Pending validation':d===null||t===null||t===0?'Not reported':d}</td><td>${provisional!==undefined?'—':t===null||t===0?'—':t+' '+u}</td><td>${provisional!==undefined?provisional+'%*':d===null||!t?'—':(100*d/t).toFixed(1)+'%'}</td></tr>`}).join('')||'<tr><td colspan="4">No records</td></tr>';
  el('summaryTable').innerHTML=current==='project'?`<tr><td>Current Daily</td><td>${escapeHtml(publication?.report_date||'Awaiting publication')}</td></tr><tr><td>Daily history</td><td>${document.querySelectorAll('#historyList .history-entry').length}</td></tr><tr><td>Latest publication</td><td>Published by TUW</td></tr>`:selected?`<tr><td>Active filter</td><td>${escapeHtml(selected)}</td></tr><tr><td>Type</td><td>${current}</td></tr><tr><td>Details</td><td>Test-specific TUW progress</td></tr>`:`<tr><td>Active filter</td><td>No selection</td></tr>`;
  el('circuits').innerHTML=circuits.map(([name,d,t])=>{let p=100*d/t;return `<div class="row"><b>${escapeHtml(name)}</b><div class="track"><div class="fill" style="width:${p}%;background:${color(p)}"></div></div><span>${p.toFixed(1)}%</span></div>`}).join('');
  // Keep field-test progress separate from final review/acceptance.
  const banner=el('ivCurveNotice');
  if(banner){
   const heading=banner.querySelector('strong');
-  if(current==='project'||(current==='circuit'&&selected)){
+  if(current==='project'||(current==='circuit'&&selected&&selected!=='11A')){
    heading.textContent=current==='project'?'IV CURVES — TEMPORARY REPORTED PROGRESS: 38%':'IV CURVES — PROJECT REFERENCE: 38%';
    el('ivCurveNote').textContent='Provisional project-wide figure (not the selected circuit\'s measured progress). Underlying instrument measurements, documentary records and technical acceptance are unchanged.';
   }else if(measured!==null&&measured>0&&iv?.scope){
