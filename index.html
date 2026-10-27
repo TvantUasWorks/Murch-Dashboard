@@ -83,7 +83,7 @@ function render(){
  if(banner){
   const heading=banner.querySelector('strong');
   if(current==='project'||(current==='circuit'&&selected&&selected!=='11A')){
-   heading.textContent=current==='project'?'IV CURVES — TEMPORARY REPORTED PROGRESS: 38%':'IV CURVES — PROJECT REFERENCE: 38%';
+   heading.textContent='IV CURVES';
    el('ivCurveNote').textContent='Provisional project-wide figure (not the selected circuit\'s measured progress). Underlying instrument measurements, documentary records and technical acceptance are unchanged.';
   }else if(measured!==null&&measured>0&&iv?.scope){
    heading.textContent='IV CURVES — MEASUREMENTS RECORDED';
