@@ -96,7 +96,7 @@ function render(){
    heading.textContent='IV CURVES — NOT STARTED';
    el('ivCurveNote').textContent=publication?.iv_curve_note||'IV curve testing has not started because the minimum project-required irradiance has not been met.';
   }
-  banner.hidden=!scoped.some(([name])=>isIV(name));
+  banner.hidden=true; // IV information panel hidden; progress remains in activity card.
  }
 }
 function evolution(){const data=realHistory;if(data.length<2){el('evolutionChart').innerHTML='';return;} const svg=el('evolutionChart'),w=760,h=290,l=45,r=16,t=18,b=42,iw=w-l-r,ih=h-t-b;const y=v=>t+ih*(1-v/100),x=i=>l+iw*i/(data.length-1);let out='';for(let v=0;v<=100;v+=25){out+=`<line x1="${l}" y1="${y(v)}" x2="${w-r}" y2="${y(v)}" stroke="#385166" stroke-dasharray="4 5"/><text x="${l-9}" y="${y(v)+4}" text-anchor="end" font-size="12" fill="#b3c5d2">${v}%</text>`}data.forEach((d,i)=>out+=`<text x="${x(i)}" y="${h-13}" text-anchor="middle" font-size="12" fill="#b3c5d2">${d.label.slice(0,6)}</text>`);for(const [key,c] of [['vdc','#4b98cf'],['ground','#36ad81'],['vlf','#e3a23b']]){out+=`<polyline fill="none" stroke="${c}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="${data.map((d,i)=>x(i)+','+y(d[key])).join(' ')}"/>`;data.forEach((d,i)=>out+=`<circle cx="${x(i)}" cy="${y(d[key])}" r="4.5" fill="${c}"/>`)}svg.innerHTML=out;}
