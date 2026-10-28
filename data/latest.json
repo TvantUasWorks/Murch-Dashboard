@@ -1,13 +1,13 @@
 {
   "schema": "tvant.client-portal.snapshot.v1",
   "project": "MURCH PV",
-  "published_at": "2026-10-27T15:58:43+00:00",
+  "published_at": "2026-10-28T18:09:31+00:00",
   "counting_basis": "Documentary coverage; not electrical acceptance. Vdc may include legacy unclassified records where no explicit Vdc are present.",
   "activities": [
     {
       "id": "vdc",
       "name": "Polarity & Continuity (Vdc)",
-      "complete": 359,
+      "complete": 363,
       "scope": 419,
       "unit": "LBD"
     },
@@ -70,7 +70,7 @@
     {
       "id": "scada",
       "name": "SCADA Communications",
-      "complete": 5,
+      "complete": 11,
       "scope": 23,
       "unit": "INV"
     }
@@ -95,7 +95,7 @@
       {
         "name": "12B",
         "scope": 107,
-        "complete": 48
+        "complete": 52
       }
     ],
     "zone": [
@@ -122,7 +122,7 @@
       {
         "name": "E",
         "scope": 128,
-        "complete": 123
+        "complete": 127
       },
       {
         "name": "F",
@@ -209,7 +209,7 @@
       {
         "name": "INV15",
         "scope": 18,
-        "complete": 13
+        "complete": 17
       },
       {
         "name": "INV16",
@@ -348,7 +348,7 @@
           },
           "scada": {
             "scope": 6,
-            "complete": 0,
+            "complete": 6,
             "unit": "INV"
           }
         }
@@ -407,7 +407,7 @@
         "activities": {
           "vdc": {
             "scope": 107,
-            "complete": 48,
+            "complete": 52,
             "unit": "LBD"
           },
           "iv": {
@@ -654,7 +654,7 @@
         "activities": {
           "vdc": {
             "scope": 128,
-            "complete": 123,
+            "complete": 127,
             "unit": "LBD"
           },
           "iv": {
@@ -693,7 +693,7 @@
           },
           "scada": {
             "scope": 7,
-            "complete": 0,
+            "complete": 6,
             "unit": "INV"
           }
         }
@@ -989,7 +989,7 @@
           },
           "scada": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "INV"
           }
         }
@@ -1234,7 +1234,7 @@
           },
           "scada": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "INV"
           }
         }
@@ -1332,7 +1332,7 @@
           },
           "scada": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "INV"
           }
         }
@@ -1381,7 +1381,7 @@
           },
           "scada": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "INV"
           }
         }
@@ -1430,7 +1430,7 @@
           },
           "scada": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "INV"
           }
         }
@@ -1479,7 +1479,7 @@
           },
           "scada": {
             "scope": 1,
-            "complete": 0,
+            "complete": 1,
             "unit": "INV"
           }
         }
@@ -1489,7 +1489,7 @@
         "activities": {
           "vdc": {
             "scope": 18,
-            "complete": 13,
+            "complete": 17,
             "unit": "LBD"
           },
           "iv": {
@@ -1928,5 +1928,5 @@
     ]
   },
   "visibility": "Aggregated client publication only; no raw measurements, names, attachments or original results.",
-  "report_date": "2026-10-27"
+  "report_date": "2026-10-28"
 }
