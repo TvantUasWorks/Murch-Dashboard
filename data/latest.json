@@ -1,7 +1,7 @@
 {
   "schema": "tvant.client-portal.snapshot.v1",
   "project": "MURCH PV",
-  "published_at": "2026-10-28T18:28:54+00:00",
+  "published_at": "2026-10-28T18:49:04+00:00",
   "counting_basis": "Documentary coverage; not electrical acceptance. Vdc may include legacy unclassified records where no explicit Vdc are present.",
   "activities": [
     {
@@ -49,9 +49,17 @@
     {
       "id": "vlf",
       "name": "VLF",
-      "complete": 1,
+      "complete": 2.6,
       "scope": 4,
-      "unit": "circuits"
+      "unit": "circuit equivalents",
+      "progress_percent": 65.0,
+      "per_circuit": {
+        "11A": 100.0,
+        "11B": 60.0,
+        "12A": 0.0,
+        "12B": 100.0
+      },
+      "progress_basis": "Reported execution, not electrical acceptance"
     },
     {
       "id": "otdr",
@@ -281,9 +289,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 1,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 1.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 100.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -330,9 +340,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 0.6,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 60.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -379,9 +391,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 0.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 0.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -428,9 +442,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 1.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 100.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -479,9 +495,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 1,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 1.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 100.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -528,9 +546,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 1.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 100.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -577,9 +597,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 1,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 1.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 100.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -626,9 +648,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 1.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 100.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -675,9 +699,11 @@
           },
           "vlf": {
             "scope": 2,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 1.6,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 80.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 2,
@@ -724,9 +750,11 @@
           },
           "vlf": {
             "scope": 2,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 1.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 50.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 2,
@@ -773,9 +801,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 0.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 0.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -824,9 +854,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 1,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 1.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 100.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -873,9 +905,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 1,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 1.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 100.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -922,9 +956,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 1,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 1.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 100.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -971,9 +1007,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 0.6,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 60.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -1020,9 +1058,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 1,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 1.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 100.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -1069,9 +1109,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 1,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 1.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 100.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -1118,9 +1160,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 1.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 100.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -1167,9 +1211,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 1.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 100.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -1216,9 +1262,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 0.6,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 60.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -1265,9 +1313,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 1.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 100.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -1314,9 +1364,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 0.6,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 60.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -1363,9 +1415,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 0.6,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 60.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -1412,9 +1466,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 0.6,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 60.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -1461,9 +1517,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 0.6,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 60.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -1510,9 +1568,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 1.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 100.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -1559,9 +1619,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 1.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 100.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -1608,9 +1670,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 1.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 100.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -1657,9 +1721,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 0.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 0.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -1706,9 +1772,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 0.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 0.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -1755,9 +1823,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 0.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 0.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -1804,9 +1874,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 0.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 0.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -1853,9 +1925,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 0.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 0.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,
@@ -1902,9 +1976,11 @@
           },
           "vlf": {
             "scope": 1,
-            "complete": 0,
-            "unit": "circuits",
-            "shared_circuit_level": true
+            "complete": 0.0,
+            "unit": "circuit equivalents",
+            "shared_circuit_level": true,
+            "progress_percent": 0.0,
+            "progress_basis": "Reported execution, not electrical acceptance"
           },
           "otdr": {
             "scope": 1,

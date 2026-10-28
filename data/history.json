@@ -50,9 +50,17 @@
         {
           "id": "vlf",
           "name": "VLF",
-          "complete": 1,
+          "complete": 2.6,
           "scope": 4,
-          "unit": "circuits"
+          "unit": "circuit equivalents",
+          "progress_percent": 65.0,
+          "per_circuit": {
+            "11A": 100.0,
+            "11B": 60.0,
+            "12A": 0.0,
+            "12B": 100.0
+          },
+          "progress_basis": "Reported execution, not electrical acceptance"
         },
         {
           "id": "otdr",
