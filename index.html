@@ -47,7 +47,7 @@ function render(){
  const groupKey=current==='circuit'?'circuit':current==='inverter'?'inv':'zone';
  const selectedGroup=publication?(publication.breakdown[groupKey]||[]).find(x=>x.name===selected):null;
  const groupDetail=publication?.activity_breakdown?.[groupKey]?.find(g=>g.name===selected);
- const ids={'Polarity & Continuity (Vdc)':'vdc','Grounding Resistance':'grounding','Grounding Continuity':'continuity','IV Curves':'iv','VLF':'vlf','OTDR — Fiber Optic Testing':'otdr','SCADA Communications':'scada','Inverter Precommissioning Inspection':'precomm'};
+ const ids={'Polarity & Continuity (Vdc)':'vdc','Grounding Resistance':'grounding','Grounding Continuity':'continuity','IV Curves':'iv','VLF':'vlf','OTDR — Fiber Optic Testing':'otdr','SCADA Communications':'scada','SCADA Control Boxes':'scada_cb','Inverter Precommissioning Inspection':'precomm'};
  const scoped=publication?(current==='project'?activities:groupDetail?activities.map(([label,_,total,unit])=>{
   const result=groupDetail.activities[ids[label]];
   return [label,result?.complete??null,result?.scope??null,result?.unit||unit];
@@ -105,12 +105,12 @@ async function loadPublishedDaily(){
   if(!lr.ok||!hr.ok)throw Error('Publication files could not be loaded Client Portal');
   const latest=await lr.json(), history=await hr.json();
   if(latest.schema!=='tvant.client-portal.snapshot.v1'||!Array.isArray(latest.activities)||!Array.isArray(history.items))throw Error('Unexpected publication file format');
-  const labels={vdc:'Polarity & Continuity (Vdc)',grounding:'Grounding Resistance',continuity:'Grounding Continuity',iv:'IV Curves',vlf:'VLF',otdr:'OTDR — Fiber Optic Testing',scada:'SCADA Communications',precomm:'Inverter Precommissioning Inspection'};
+  const labels={vdc:'Polarity & Continuity (Vdc)',grounding:'Grounding Resistance',continuity:'Grounding Continuity',iv:'IV Curves',vlf:'VLF',otdr:'OTDR — Fiber Optic Testing',scada:'SCADA Communications',scada_cb:'SCADA Control Boxes',precomm:'Inverter Precommissioning Inspection'};
   const valid=latest.activities.filter(a=>Number.isFinite(a.scope)&&Number.isFinite(a.complete)&&a.scope>=a.complete&&a.complete>=0);
   if(!valid.length)throw Error('No valid activities were found in the published Daily');
   activities=valid.map(a=>[labels[a.id]||String(a.name||'').replace(/VLF\s*\+\s*Battery Bank/gi,'VLF'),a.complete,a.scope,a.unit]);
   for(const a of latest.activities){if(a.complete===null&&Number.isFinite(a.scope)&&!valid.some(b=>b.id===a.id))activities.push([labels[a.id]||a.name,null,a.scope,a.unit]);}
-  for(const id of ['otdr','scada','precomm']){
+  for(const id of ['otdr','scada','precomm','scada_cb']){
     if(!activities.some(a=>a[0]===labels[id]))activities.push([labels[id],null,id==='scada'?23:4,id==='scada'?'INV':'circuits']);
   }
   publication=latest;
@@ -135,7 +135,8 @@ async function loadPublishedDaily(){
     ['vlf','VLF','#e3a23b'],
     ['otdr','OTDR','#22d3ee'],
     ['precomm','Inverter Precommissioning','#e879f9'],
-    ['scada','SCADA & Communications','#f59e71']
+    ['scada','SCADA & Communications','#f59e71'],
+    ['scada_cb','SCADA Control Boxes','#78c4aa']
   ];
   const historyData=[...items].reverse().map(entry=>{
     const values={};
